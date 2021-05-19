@@ -1,5 +1,15 @@
 import React from 'react';
-import { Card, CardActionArea, CardContent, CardMedia, createStyles, Grid, makeStyles, Theme, Typography } from '@material-ui/core';
+import {
+  Card,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  createStyles,
+  Grid,
+  makeStyles,
+  Theme,
+  Typography,
+} from '@material-ui/core';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -8,14 +18,13 @@ const useStyles = makeStyles((theme: Theme) =>
       color: 'white',
       flexGrow: 1,
       borderRadius: 0,
-      padding: 4
+      padding: 4,
     },
     media: {
-      height: 500
+      height: 500,
     },
-  }),
+  })
 );
-
 
 export function WorkPage() {
   const classes = useStyles();
@@ -26,21 +35,27 @@ export function WorkPage() {
         <CardContent>
           <Grid container spacing={4}>
             <Grid item xs={12}>
-              <Typography variant="h3">
-                Previous Work
-              </Typography>
+              <Typography variant="h3">Previous Work</Typography>
             </Grid>
             <Grid item>
               <Card elevation={2}>
                 <CardActionArea>
-                  <CardMedia className={classes.media} image="https://www.marketingmilk.com/wp-content/themes/marketing-milk/static/img/LaptopV2.png" />
+                  <CardMedia
+                    className={classes.media}
+                    image="https://www.marketingmilk.com/wp-content/themes/marketing-milk/static/img/LaptopV2.png"
+                  />
                   <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
                       Marketing Milk
                     </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p">
-                      Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                      across all continents except Antarctica
+                    <Typography
+                      variant="body2"
+                      color="textSecondary"
+                      component="p"
+                    >
+                      Lizards are a widespread group of squamate reptiles, with
+                      over 6,000 species, ranging across all continents except
+                      Antarctica
                     </Typography>
                   </CardContent>
                 </CardActionArea>
@@ -50,5 +65,5 @@ export function WorkPage() {
         </CardContent>
       </CardActionArea>
     </Card>
-  )
+  );
 }

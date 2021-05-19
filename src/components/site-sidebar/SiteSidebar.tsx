@@ -1,7 +1,17 @@
 import React from 'react';
-import { Link } from 'wouter';
-import { Home, Info, Work, ContactMail } from '@material-ui/icons';
-import { createStyles, makeStyles, Theme, List, ListItem, ListItemIcon, ListItemText, Typography, Paper } from '@material-ui/core';
+import {Link} from 'wouter';
+import {Home, Info, Work, ContactMail, MusicNote} from '@material-ui/icons';
+import {
+  createStyles,
+  makeStyles,
+  Theme,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Typography,
+  Paper,
+} from '@material-ui/core';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -28,7 +38,7 @@ const useStyles = makeStyles((theme: Theme) =>
     nested: {
       paddingLeft: theme.spacing(4),
     },
-  }),
+  })
 );
 
 export function SiteSideBar() {
@@ -36,9 +46,7 @@ export function SiteSideBar() {
   return (
     <div className={classes.root}>
       <Paper elevation={0} className={classes.logo}>
-        <Typography variant="h4">
-          Chris P
-        </Typography>
+        <Typography variant="h4">Chris P</Typography>
       </Paper>
       <List component="nav" className={classes.list}>
         <Link href="/">
@@ -73,7 +81,14 @@ export function SiteSideBar() {
             <ListItemText primary="Contact" />
           </ListItem>
         </Link>
+        <ListItem divider />
+        <ListItem button>
+          <ListItemIcon>
+            <MusicNote />
+          </ListItemIcon>
+          <ListItemText primary="My Favorite Songs" />
+        </ListItem>
       </List>
     </div>
-  )
+  );
 }

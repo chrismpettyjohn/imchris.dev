@@ -1,18 +1,12 @@
 import React from 'react';
-import {createStyles, Grid, makeStyles, Typography} from '@material-ui/core';
-import {ProjectCardProps} from './project-card/ProjectCard.types';
 import {ProjectCard} from './project-card/ProjectCard';
+import {ProjectCardProps} from './project-card/ProjectCard.types';
+import {createStyles, Grid, makeStyles, Typography} from '@material-ui/core';
 
 const useStyles = makeStyles(() =>
   createStyles({
     root: {
       background: '#284b63',
-      borderRadius: 0,
-      color: 'white',
-      display: 'flex',
-      padding: '5%',
-      minHeight: '100%',
-      minWidth: '100%',
     },
     media: {
       height: 500,

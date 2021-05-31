@@ -5,10 +5,6 @@ const useStyles = makeStyles(() =>
   createStyles({
     root: {
       background: '#284b63',
-      borderRadius: 0,
-      color: 'white',
-      display: 'flex',
-      padding: '5%',
     },
     media: {
       height: 500,

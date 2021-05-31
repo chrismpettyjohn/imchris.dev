@@ -1,16 +1,5 @@
 import React from 'react';
-import {
-  createStyles,
-  Grid,
-  makeStyles,
-  Typography,
-  Card,
-  CardActionArea,
-  CardMedia,
-  CardContent,
-  CardActions,
-  Button,
-} from '@material-ui/core';
+import {createStyles, Grid, makeStyles, Typography} from '@material-ui/core';
 import {ProjectCardProps} from './project-card/ProjectCard.types';
 import {ProjectCard} from './project-card/ProjectCard';
 

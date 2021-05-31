@@ -4,9 +4,6 @@ import TodayIcon from '@material-ui/icons/Today';
 import StoreIcon from '@material-ui/icons/Store';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import {
-  Card,
-  CardActionArea,
-  CardContent,
   createStyles,
   Grid,
   makeStyles,
@@ -29,7 +26,7 @@ const useStyles = makeStyles(() =>
       borderRadius: 0,
       color: 'white',
       display: 'flex',
-      padding: 4,
+      padding: '5%',
     },
     media: {
       height: 500,

@@ -47,30 +47,38 @@ export function SiteSideBar() {
       <Toolbar />
       <div className={classes.drawerContainer}>
         <List>
-          <ListItem button>
-            <ListItemIcon className={classes.drawerIcon}>
-              <Home />
-            </ListItemIcon>
-            <ListItemText primary="Home" />
-          </ListItem>
-          <ListItem button>
-            <ListItemIcon className={classes.drawerIcon}>
-              <Info />
-            </ListItemIcon>
-            <ListItemText primary="About" />
-          </ListItem>
-          <ListItem button>
-            <ListItemIcon className={classes.drawerIcon}>
-              <Work />
-            </ListItemIcon>
-            <ListItemText primary="Work" />
-          </ListItem>
-          <ListItem button>
-            <ListItemIcon className={classes.drawerIcon}>
-              <ContactMail />
-            </ListItemIcon>
-            <ListItemText primary="Contact" />
-          </ListItem>
+          <Link to="/">
+            <ListItem button>
+              <ListItemIcon className={classes.drawerIcon}>
+                <Home />
+              </ListItemIcon>
+              <ListItemText primary="Home" />
+            </ListItem>
+          </Link>
+          <Link to="/about">
+            <ListItem button>
+              <ListItemIcon className={classes.drawerIcon}>
+                <Info />
+              </ListItemIcon>
+              <ListItemText primary="About" />
+            </ListItem>
+          </Link>
+          <Link to="/work">
+            <ListItem button>
+              <ListItemIcon className={classes.drawerIcon}>
+                <Work />
+              </ListItemIcon>
+              <ListItemText primary="Work" />
+            </ListItem>
+          </Link>
+          <Link to="/contact">
+            <ListItem button>
+              <ListItemIcon className={classes.drawerIcon}>
+                <ContactMail />
+              </ListItemIcon>
+              <ListItemText primary="Contact" />
+            </ListItem>
+          </Link>
         </List>
         <Divider />
       </div>

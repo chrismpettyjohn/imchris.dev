@@ -28,18 +28,6 @@ const useStyles = makeStyles(() =>
       width: '100%',
       textAlign: 'center',
     },
-    timelineDetails: {
-      color: 'white',
-      padding: '6px 16px',
-      backgroundColor: '#415a77',
-    },
-    timelineDot: {
-      backgroundColor: '#415a77',
-    },
-    timelineTime: {
-      color: 'white',
-      fontSize: '2em',
-    },
   })
 );
 

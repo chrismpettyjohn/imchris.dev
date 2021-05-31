@@ -8,6 +8,8 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       display: 'flex',
+      minHeight: '100%',
+      minWidth: '100%',
     },
     content: {
       flexGrow: 1,

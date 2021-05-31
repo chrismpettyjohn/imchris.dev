@@ -26,12 +26,10 @@ const useStyles = makeStyles(() =>
   createStyles({
     root: {
       background: '#006064',
-      color: 'white',
-      flexGrow: 1,
       borderRadius: 0,
+      color: 'white',
+      display: 'flex',
       padding: 4,
-      height: '100%',
-      width: '100%',
     },
     media: {
       height: 500,
@@ -70,148 +68,130 @@ export function HomePage() {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root} id="home-page">
-      <CardActionArea>
-        <CardContent>
-          <Grid container spacing={4}>
-            <Grid item xl={12}>
-              <div className={classes.jumbotron}>
-                <div className={classes.jumbotronText}>
-                  <Typography variant="h2">
-                    Software solutions <b>that scale</b>
-                  </Typography>
-                  <Typography variant="h6">
-                    With over <b>10 years</b> of experience, I strive to build
-                    the most innovative products for my clients.
-                  </Typography>
-                </div>
-              </div>
-            </Grid>
-            <Grid item xl={12}>
-              <div style={{maxWidth: 1200}}>
-                <Typography variant="h2">Who I Am</Typography>
-                <Typography variant="body1">
-                  I'm a Software Engineer with a drive to not only provide the
-                  best products, but also to do so with everlasting technology
-                  that can be built indefinitely.
+    <Grid container className={classes.root} spacing={6}>
+      <Grid item xl={12}>
+        <div className={classes.jumbotron}>
+          <div className={classes.jumbotronText}>
+            <Typography variant="h2">
+              Software solutions <b>that scale</b>
+            </Typography>
+            <Typography variant="h6">
+              With over <b>10 years</b> of experience, I strive to build the
+              most innovative products for my clients.
+            </Typography>
+          </div>
+        </div>
+      </Grid>
+      <Grid item xl={12}>
+        <div style={{maxWidth: 1200}}>
+          <Typography variant="h2">Who I Am</Typography>
+          <Typography variant="body1">
+            I'm a Software Engineer with a drive to not only provide the best
+            products, but also to do so with everlasting technology that can be
+            built indefinitely.
+          </Typography>
+        </div>
+      </Grid>
+      <Grid item xl={12}>
+        <Typography variant="h2">My Journey</Typography>
+        <br />
+      </Grid>
+      <Grid item xl={8}>
+        <Timeline>
+          <TimelineItem>
+            <TimelineContent>
+              <Typography variant="body2" className={classes.timelineTime}>
+                2010
+              </Typography>
+            </TimelineContent>
+            <TimelineSeparator>
+              <TimelineDot className={classes.timelineDot}>
+                <GitHubIcon />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              <Paper elevation={3} className={classes.timelineDetails}>
+                <Typography variant="h6" component="h1">
+                  Started Developing
                 </Typography>
-              </div>
-            </Grid>
-            <Grid item xl={12}>
-              <Typography variant="h2">My Journey</Typography>
-              <br />
-            </Grid>
-            <Grid item xl={6}>
-              <Timeline>
-                <TimelineItem>
-                  <TimelineContent>
-                    <Typography
-                      variant="body2"
-                      className={classes.timelineTime}
-                    >
-                      2010
-                    </Typography>
-                  </TimelineContent>
-                  <TimelineSeparator>
-                    <TimelineDot className={classes.timelineDot}>
-                      <GitHubIcon />
-                    </TimelineDot>
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent>
-                    <Paper elevation={3} className={classes.timelineDetails}>
-                      <Typography variant="h6" component="h1">
-                        Started Developing
-                      </Typography>
-                      <Typography>At 10, I wrote my first CMS</Typography>
-                    </Paper>
-                  </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                  <TimelineContent>
-                    <Typography
-                      variant="body2"
-                      className={classes.timelineTime}
-                    >
-                      2014
-                    </Typography>
-                  </TimelineContent>
-                  <TimelineSeparator>
-                    <TimelineDot className={classes.timelineDot}>
-                      <StoreIcon />
-                    </TimelineDot>
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent>
-                    <Paper elevation={3} className={classes.timelineDetails}>
-                      <Typography variant="h6" component="h1">
-                        Consulting
-                      </Typography>
-                      <Typography>
-                        By 14, I helped small businesses take their platform to
-                        the internet.
-                      </Typography>
-                    </Paper>
-                  </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                  <TimelineContent>
-                    <Typography
-                      variant="body2"
-                      className={classes.timelineTime}
-                    >
-                      2018
-                    </Typography>
-                  </TimelineContent>
-                  <TimelineSeparator>
-                    <TimelineDot className={classes.timelineDot}>
-                      <WorkIcon />
-                    </TimelineDot>
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent>
-                    <Paper elevation={3} className={classes.timelineDetails}>
-                      <Typography variant="h6" component="h1">
-                        Professional Career
-                      </Typography>
-                      <Typography>
-                        At 19, I became a Software Engineer for my first full
-                        time job.
-                      </Typography>
-                    </Paper>
-                  </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                  <TimelineContent>
-                    <Typography
-                      variant="body2"
-                      className={classes.timelineTime}
-                    >
-                      2021
-                    </Typography>
-                  </TimelineContent>
-                  <TimelineSeparator>
-                    <TimelineDot className={classes.timelineDot}>
-                      <TodayIcon />
-                    </TimelineDot>
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent>
-                    <Paper elevation={3} className={classes.timelineDetails}>
-                      <Typography variant="h6" component="h1">
-                        Present
-                      </Typography>
-                      <Typography>
-                        I help startups build scalable Node applications.
-                      </Typography>
-                    </Paper>
-                  </TimelineContent>
-                </TimelineItem>
-              </Timeline>
-            </Grid>
-          </Grid>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+                <Typography>At 10, I wrote my first CMS</Typography>
+              </Paper>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineContent>
+              <Typography variant="body2" className={classes.timelineTime}>
+                2014
+              </Typography>
+            </TimelineContent>
+            <TimelineSeparator>
+              <TimelineDot className={classes.timelineDot}>
+                <StoreIcon />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              <Paper elevation={3} className={classes.timelineDetails}>
+                <Typography variant="h6" component="h1">
+                  Consulting
+                </Typography>
+                <Typography>
+                  By 14, I helped small businesses take their platform to the
+                  internet.
+                </Typography>
+              </Paper>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineContent>
+              <Typography variant="body2" className={classes.timelineTime}>
+                2018
+              </Typography>
+            </TimelineContent>
+            <TimelineSeparator>
+              <TimelineDot className={classes.timelineDot}>
+                <WorkIcon />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              <Paper elevation={3} className={classes.timelineDetails}>
+                <Typography variant="h6" component="h1">
+                  Professional Career
+                </Typography>
+                <Typography>
+                  At 19, I became a Software Engineer for my first full time
+                  job.
+                </Typography>
+              </Paper>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineContent>
+              <Typography variant="body2" className={classes.timelineTime}>
+                2021
+              </Typography>
+            </TimelineContent>
+            <TimelineSeparator>
+              <TimelineDot className={classes.timelineDot}>
+                <TodayIcon />
+              </TimelineDot>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              <Paper elevation={3} className={classes.timelineDetails}>
+                <Typography variant="h6" component="h1">
+                  Present
+                </Typography>
+                <Typography>
+                  I help startups build scalable Node applications.
+                </Typography>
+              </Paper>
+            </TimelineContent>
+          </TimelineItem>
+        </Timeline>
+      </Grid>
+    </Grid>
   );
 }

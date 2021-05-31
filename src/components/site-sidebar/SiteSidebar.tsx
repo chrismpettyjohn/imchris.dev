@@ -4,90 +4,76 @@ import {Home, Info, Work, ContactMail} from '@material-ui/icons';
 import {
   createStyles,
   makeStyles,
-  Theme,
   List,
   ListItem,
   ListItemIcon,
   ListItemText,
-  Typography,
-  Paper,
+  Toolbar,
+  Drawer,
+  Divider,
 } from '@material-ui/core';
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles(() =>
   createStyles({
-    root: {
-      height: '100%',
-      width: '100%',
-      backgroundColor: '#353535',
+    drawer: {
+      width: 250,
+      flexShrink: 0,
     },
-    list: {
-      width: '100%',
-      height: 'calc(100% - 250)',
+    drawerPaper: {
+      background: '#353535',
+      color: 'white',
+      width: 250,
+    },
+    drawerIcon: {
       color: 'white',
     },
-    listIcon: {
-      color: 'white',
-    },
-    logoContainer: {
-      background:
-        'url(https://scontent-ort2-2.xx.fbcdn.net/v/t1.6435-9/119963328_1395641623976054_8575227829765501463_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=174925&_nc_ohc=ftj20LmbFSQAX_oRm32&_nc_ht=scontent-ort2-2.xx&oh=cd184697983de5308deaa99e36de258b&oe=60D86ED1)',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      //background: '#284b63',
-      height: 250,
-      width: '100%',
-      aligYSDFtems: 'center',
-    },
-    nested: {
-      paddingLeft: theme.spacing(4),
-    },
-    logo: {
-      color: 'white',
-      textAlign: 'center',
-      fontWeight: 'bold',
+    drawerContainer: {
+      overflow: 'auto',
     },
   })
 );
 
 export function SiteSideBar() {
   const classes = useStyles();
+
   return (
-    <div className={classes.root}>
-      <Paper elevation={0} className={classes.logoContainer} />
-      <List component="nav" className={classes.list}>
-        <Link href="/">
+    <Drawer
+      className={classes.drawer}
+      variant="permanent"
+      classes={{
+        paper: classes.drawerPaper,
+      }}
+    >
+      <Toolbar />
+      <div className={classes.drawerContainer}>
+        <List>
           <ListItem button>
-            <ListItemIcon className={classes.listIcon}>
+            <ListItemIcon className={classes.drawerIcon}>
               <Home />
             </ListItemIcon>
             <ListItemText primary="Home" />
           </ListItem>
-        </Link>
-        <Link href="/about">
           <ListItem button>
-            <ListItemIcon className={classes.listIcon}>
+            <ListItemIcon className={classes.drawerIcon}>
               <Info />
             </ListItemIcon>
             <ListItemText primary="About" />
           </ListItem>
-        </Link>
-        <Link href="/work">
           <ListItem button>
-            <ListItemIcon className={classes.listIcon}>
+            <ListItemIcon className={classes.drawerIcon}>
               <Work />
             </ListItemIcon>
             <ListItemText primary="Work" />
           </ListItem>
-        </Link>
-        <Link href="/contact">
           <ListItem button>
-            <ListItemIcon className={classes.listIcon}>
+            <ListItemIcon className={classes.drawerIcon}>
               <ContactMail />
             </ListItemIcon>
             <ListItemText primary="Contact" />
           </ListItem>
-        </Link>
-      </List>
-    </div>
+        </List>
+        <Divider />
+      </div>
+    </Drawer>
   );
 }

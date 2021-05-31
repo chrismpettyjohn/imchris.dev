@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'wouter';
-import {Home, Info, Work, ContactMail, MusicNote} from '@material-ui/icons';
+import {Home, Info, Work, ContactMail} from '@material-ui/icons';
 import {
   createStyles,
   makeStyles,
@@ -18,25 +18,33 @@ const useStyles = makeStyles((theme: Theme) =>
     root: {
       height: '100%',
       width: '100%',
-      marginLeft: 15,
-      marginTop: 15,
-      marginRight: 0,
-      position: 'absolute',
-      top: 0,
-      left: 0,
+      backgroundColor: '#353535',
     },
     list: {
       width: '100%',
       height: 'calc(100% - 250)',
-      backgroundColor: theme.palette.background.paper,
+      color: 'white',
     },
-    logo: {
-      background: 'red',
+    listIcon: {
+      color: 'white',
+    },
+    logoContainer: {
+      background:
+        'url(https://scontent-ort2-2.xx.fbcdn.net/v/t1.6435-9/119963328_1395641623976054_8575227829765501463_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=174925&_nc_ohc=ftj20LmbFSQAX_oRm32&_nc_ht=scontent-ort2-2.xx&oh=cd184697983de5308deaa99e36de258b&oe=60D86ED1)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      //background: '#284b63',
       height: 250,
       width: '100%',
+      aligYSDFtems: 'center',
     },
     nested: {
       paddingLeft: theme.spacing(4),
+    },
+    logo: {
+      color: 'white',
+      textAlign: 'center',
+      fontWeight: 'bold',
     },
   })
 );
@@ -45,13 +53,11 @@ export function SiteSideBar() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Paper elevation={0} className={classes.logo}>
-        <Typography variant="h4">Chris P</Typography>
-      </Paper>
+      <Paper elevation={0} className={classes.logoContainer} />
       <List component="nav" className={classes.list}>
         <Link href="/">
           <ListItem button>
-            <ListItemIcon>
+            <ListItemIcon className={classes.listIcon}>
               <Home />
             </ListItemIcon>
             <ListItemText primary="Home" />
@@ -59,7 +65,7 @@ export function SiteSideBar() {
         </Link>
         <Link href="/about">
           <ListItem button>
-            <ListItemIcon>
+            <ListItemIcon className={classes.listIcon}>
               <Info />
             </ListItemIcon>
             <ListItemText primary="About" />
@@ -67,7 +73,7 @@ export function SiteSideBar() {
         </Link>
         <Link href="/work">
           <ListItem button>
-            <ListItemIcon>
+            <ListItemIcon className={classes.listIcon}>
               <Work />
             </ListItemIcon>
             <ListItemText primary="Work" />
@@ -75,19 +81,12 @@ export function SiteSideBar() {
         </Link>
         <Link href="/contact">
           <ListItem button>
-            <ListItemIcon>
+            <ListItemIcon className={classes.listIcon}>
               <ContactMail />
             </ListItemIcon>
             <ListItemText primary="Contact" />
           </ListItem>
         </Link>
-        <ListItem divider />
-        <ListItem button>
-          <ListItemIcon>
-            <MusicNote />
-          </ListItemIcon>
-          <ListItemText primary="My Favorite Songs" />
-        </ListItem>
       </List>
     </div>
   );

@@ -6,11 +6,10 @@ import {
   createStyles,
   Grid,
   makeStyles,
-  Theme,
   Typography,
 } from '@material-ui/core';
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles(() =>
   createStyles({
     root: {
       flexGrow: 1,

@@ -11,19 +11,18 @@ import {
 
 const useStyles = makeStyles(() =>
   createStyles({
-    root: {
-      background: '#778da9',
-      minHeight: '100%',
-      width: '100%',
-    },
     card: {
       background: '#1b263b',
       color: 'white',
+      width: '80vw',
     },
     title: {
       fontSize: 24,
     },
     formInput: {
+      color: 'white',
+    },
+    formLabel: {
       color: 'white',
     },
   })
@@ -33,7 +32,7 @@ export function ContactPage() {
   const classes = useStyles();
 
   return (
-    <Grid container className={classes.root} spacing={6}>
+    <Grid container spacing={6}>
       <Grid item xl={12}>
         <Typography variant="h2">Contact Me</Typography>
         <br />
@@ -50,14 +49,29 @@ export function ContactPage() {
             <Grid container spacing={6}>
               <Grid item xl={6}>
                 <TextField
-                  className={classes.formInput}
                   label="Phone Number"
                   type="phone"
+                  InputProps={{
+                    className: classes.formInput,
+                  }}
+                  InputLabelProps={{
+                    className: classes.formLabel,
+                  }}
                   fullWidth
                 />
               </Grid>
               <Grid item xl={6}>
-                <TextField label="Email Address" type="phone" fullWidth />
+                <TextField
+                  label="Email Address"
+                  type="phone"
+                  fullWidth
+                  InputProps={{
+                    className: classes.formInput,
+                  }}
+                  InputLabelProps={{
+                    className: classes.formLabel,
+                  }}
+                />
               </Grid>
               <Grid item xl={12}>
                 <TextField
@@ -66,6 +80,12 @@ export function ContactPage() {
                   fullWidth
                   multiline={true}
                   rows={10}
+                  InputProps={{
+                    className: classes.formInput,
+                  }}
+                  InputLabelProps={{
+                    className: classes.formLabel,
+                  }}
                 />
               </Grid>
             </Grid>

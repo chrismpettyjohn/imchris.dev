@@ -16,13 +16,13 @@ import {
 const useStyles = makeStyles(() =>
   createStyles({
     drawer: {
-      width: 250,
+      width: '10vw',
       flexShrink: 0,
     },
     drawerPaper: {
-      background: '#353535',
+      background: '#1b262c',
       color: 'white',
-      width: 250,
+      width: '10vw',
     },
     drawerIcon: {
       color: 'white',

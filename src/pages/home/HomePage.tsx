@@ -21,9 +21,6 @@ import {
 
 const useStyles = makeStyles(() =>
   createStyles({
-    root: {
-      background: '#006064',
-    },
     media: {
       height: 500,
       width: 400,
@@ -61,7 +58,7 @@ export function HomePage() {
   const classes = useStyles();
 
   return (
-    <Grid container className={classes.root} spacing={6}>
+    <Grid container spacing={6}>
       <Grid item xl={12}>
         <div className={classes.jumbotron}>
           <div className={classes.jumbotronText}>

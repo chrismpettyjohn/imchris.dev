@@ -2,18 +2,17 @@ import React from 'react';
 import {SitePages} from './pages/SitePages';
 import {SiteHeader} from './components/site-header/SiteHeader';
 import {SiteSideBar} from './components/site-sidebar/SiteSidebar';
-import {CssBaseline, makeStyles, createStyles, Theme} from '@material-ui/core';
+import {CssBaseline, makeStyles, createStyles} from '@material-ui/core';
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles(() =>
   createStyles({
     root: {
       display: 'flex',
-      minHeight: '100%',
-      minWidth: '100%',
+      minHeight: '100vh',
+      width: '90vw',
     },
     content: {
-      flexGrow: 1,
-      padding: theme.spacing(3),
+      flex: 1,
     },
   })
 );

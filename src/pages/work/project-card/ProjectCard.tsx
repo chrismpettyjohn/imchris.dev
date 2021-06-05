@@ -37,7 +37,13 @@ export function ProjectCard({
   return (
     <Card className={classes.card}>
       <CardActionArea>
-        <CardMedia component="img" height={500} image={imageURL} />
+        <CardMedia
+          component="img"
+          width="100%"
+          height={500}
+          src={imageURL}
+          style={{backgroundSize: 'cover'}}
+        />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {title}

@@ -11,6 +11,7 @@ import {
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     appBar: {
+      background: '#3282b8',
       zIndex: theme.zIndex.drawer + 1,
     },
   })

@@ -3,9 +3,6 @@ import {createStyles, Grid, makeStyles, Typography} from '@material-ui/core';
 
 const useStyles = makeStyles(() =>
   createStyles({
-    root: {
-      background: '#284b63',
-    },
     media: {
       height: 500,
       width: 400,
@@ -31,7 +28,7 @@ export function AboutPage() {
   const classes = useStyles();
 
   return (
-    <Grid container className={classes.root} spacing={6}>
+    <Grid container spacing={6}>
       <Grid item xl={12}>
         <Typography variant="h2">About Me</Typography>
         <br />

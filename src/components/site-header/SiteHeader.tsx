@@ -1,4 +1,5 @@
 import React from 'react';
+import {sidebarWidth} from '../site-sidebar/SiteSidebar';
 import {
   AppBar,
   createStyles,
@@ -13,6 +14,10 @@ const useStyles = makeStyles((theme: Theme) =>
     appBar: {
       background: '#3282b8',
       zIndex: theme.zIndex.drawer + 1,
+      [theme.breakpoints.up('sm')]: {
+        width: `calc(100% - ${sidebarWidth}px)`,
+        marginLeft: sidebarWidth,
+      },
     },
   })
 );

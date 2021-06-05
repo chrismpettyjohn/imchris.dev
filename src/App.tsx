@@ -1,18 +1,22 @@
 import React from 'react';
 import {SitePages} from './pages/SitePages';
 import {SiteHeader} from './components/site-header/SiteHeader';
-import {SiteSideBar} from './components/site-sidebar/SiteSidebar';
-import {CssBaseline, makeStyles, createStyles} from '@material-ui/core';
+import {sidebarWidth, SiteSideBar} from './components/site-sidebar/SiteSidebar';
+import {CssBaseline, makeStyles, createStyles, Theme} from '@material-ui/core';
 
-const useStyles = makeStyles(() =>
+const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       display: 'flex',
-      minHeight: '100vh',
-      width: '90vw',
+      height: '100vh',
+      width: '100vw',
     },
     content: {
-      flex: 1,
+      flexGrow: 1,
+      [theme.breakpoints.up('sm')]: {
+        width: `calc(100% - ${sidebarWidth}px)`,
+        marginLeft: sidebarWidth,
+      },
     },
   })
 );

@@ -1,8 +1,9 @@
 import React from 'react';
 import {SitePages} from './pages/SitePages';
 import {SiteHeader} from './components/site-header/SiteHeader';
+import {Theme as ThemeWrapper} from './components/theme/Theme';
+import {makeStyles, createStyles, Theme} from '@material-ui/core';
 import {sidebarWidth, SiteSideBar} from './components/site-sidebar/SiteSidebar';
-import {CssBaseline, makeStyles, createStyles, Theme} from '@material-ui/core';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -24,14 +25,15 @@ const useStyles = makeStyles((theme: Theme) =>
 function App() {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
-      <CssBaseline />
-      <SiteHeader />
-      <SiteSideBar />
-      <main className={classes.content}>
-        <SitePages />
-      </main>
-    </div>
+    <ThemeWrapper>
+      <div className={classes.root}>
+        <SiteHeader />
+        <SiteSideBar />
+        <main className={classes.content}>
+          <SitePages />
+        </main>
+      </div>
+    </ThemeWrapper>
   );
 }
 

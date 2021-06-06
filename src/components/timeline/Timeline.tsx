@@ -10,7 +10,6 @@ import {
 import {
   TimelineConnector,
   TimelineContent,
-  TimelineOppositeContent,
   TimelineDot,
   TimelineItem,
   TimelineSeparator,

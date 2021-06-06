@@ -1,23 +1,13 @@
 import React from 'react';
+import WebIcon from '@material-ui/icons/Web';
+import CodeIcon from '@material-ui/icons/Code';
 import WorkIcon from '@material-ui/icons/Work';
 import TodayIcon from '@material-ui/icons/Today';
 import StoreIcon from '@material-ui/icons/Store';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import {
-  createStyles,
-  Grid,
-  makeStyles,
-  Typography,
-  Paper,
-} from '@material-ui/core';
-import {
-  Timeline,
-  TimelineItem,
-  TimelineConnector,
-  TimelineSeparator,
-  TimelineDot,
-  TimelineContent,
-} from '@material-ui/lab';
+import {Timeline} from '../../components/timeline/Timeline';
+import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
+import {createStyles, Grid, makeStyles, Typography} from '@material-ui/core';
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -38,18 +28,6 @@ const useStyles = makeStyles(() =>
       top: '45%',
       width: '100%',
       textAlign: 'center',
-    },
-    timelineDetails: {
-      color: 'white',
-      padding: '6px 16px',
-      backgroundColor: '#415a77',
-    },
-    timelineDot: {
-      backgroundColor: '#415a77',
-    },
-    timelineTime: {
-      color: 'white',
-      fontSize: '2em',
     },
   })
 );
@@ -84,103 +62,54 @@ export function HomePage() {
       </Grid>
       <Grid item xl={12}>
         <Typography variant="h2">My Journey</Typography>
-        <br />
       </Grid>
       <Grid item xl={8}>
-        <Timeline>
-          <TimelineItem>
-            <TimelineContent>
-              <Typography variant="body2" className={classes.timelineTime}>
-                2010
-              </Typography>
-            </TimelineContent>
-            <TimelineSeparator>
-              <TimelineDot className={classes.timelineDot}>
-                <GitHubIcon />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-              <Paper elevation={3} className={classes.timelineDetails}>
-                <Typography variant="h6" component="h1">
-                  Started Developing
-                </Typography>
-                <Typography>At 10, I wrote my first CMS</Typography>
-              </Paper>
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineContent>
-              <Typography variant="body2" className={classes.timelineTime}>
-                2014
-              </Typography>
-            </TimelineContent>
-            <TimelineSeparator>
-              <TimelineDot className={classes.timelineDot}>
-                <StoreIcon />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-              <Paper elevation={3} className={classes.timelineDetails}>
-                <Typography variant="h6" component="h1">
-                  Consulting
-                </Typography>
-                <Typography>
-                  By 14, I helped small businesses take their platform to the
-                  internet.
-                </Typography>
-              </Paper>
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineContent>
-              <Typography variant="body2" className={classes.timelineTime}>
-                2018
-              </Typography>
-            </TimelineContent>
-            <TimelineSeparator>
-              <TimelineDot className={classes.timelineDot}>
-                <WorkIcon />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-              <Paper elevation={3} className={classes.timelineDetails}>
-                <Typography variant="h6" component="h1">
-                  Professional Career
-                </Typography>
-                <Typography>
-                  At 19, I became a Software Engineer for my first full time
-                  job.
-                </Typography>
-              </Paper>
-            </TimelineContent>
-          </TimelineItem>
-          <TimelineItem>
-            <TimelineContent>
-              <Typography variant="body2" className={classes.timelineTime}>
-                2021
-              </Typography>
-            </TimelineContent>
-            <TimelineSeparator>
-              <TimelineDot className={classes.timelineDot}>
-                <TodayIcon />
-              </TimelineDot>
-              <TimelineConnector />
-            </TimelineSeparator>
-            <TimelineContent>
-              <Paper elevation={3} className={classes.timelineDetails}>
-                <Typography variant="h6" component="h1">
-                  Present
-                </Typography>
-                <Typography>
-                  I help startups build scalable Node applications.
-                </Typography>
-              </Paper>
-            </TimelineContent>
-          </TimelineItem>
-        </Timeline>
+        <Timeline
+          items={[
+            {
+              year: 2010,
+              name: 'Started Developing',
+              desc: 'At 10, I wrote my first website using HTML, CSS and PHP.',
+              icon: <CodeIcon />,
+            },
+            {
+              year: 2012,
+              name: 'First Product Launched',
+              desc: 'At 12, I launched my first game that got over 100 users monthly!',
+              icon: <WebIcon />,
+            },
+            {
+              year: 2014,
+              name: 'Started Consulting',
+              desc: 'By 14, I started using my experiences to help small businesses gain online presence and implement cloud technologies.',
+              icon: <StoreIcon />,
+            },
+            {
+              year: 2016,
+              name: 'Open Source Development',
+              desc: "While I always maintained open source code, at 16 my developments really took off with exciting CMS's that adapted a modern web app approac'",
+              icon: <GitHubIcon />,
+            },
+            {
+              year: 2017,
+              name: 'Enlisted in the Army Reserve',
+              desc: 'During my time in the Army, I learned many valuable skills that helped make me a more efficient team member',
+              icon: <PermContactCalendarIcon />,
+            },
+            {
+              year: 2018,
+              name: 'Professional Career',
+              desc: 'At 19, I started a position as Software Engineer where I led many projects that shaped the architecture of the product.',
+              icon: <WorkIcon />,
+            },
+            {
+              year: 2021,
+              name: 'Present',
+              desc: 'I help startups build scalable Node applications.',
+              icon: <TodayIcon />,
+            },
+          ]}
+        />
       </Grid>
     </Grid>
   );

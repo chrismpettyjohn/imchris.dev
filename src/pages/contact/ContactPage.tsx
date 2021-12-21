@@ -1,4 +1,6 @@
 import React from 'react';
+import MailIcon from '@material-ui/icons/Mail';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import {Button, Grid, Typography} from '@material-ui/core';
 
 export function ContactPage() {
@@ -8,15 +10,28 @@ export function ContactPage() {
         <Typography variant="h2">Contact Me</Typography>
         <br />
         <Typography variant="h6" style={{width: '50%'}}>
-          You can contact me directly with the following...
+          You can contact me directly via the following
         </Typography>
         <br />
       </Grid>
       <Grid item xl={12}>
         <div className="d-flex">
           <a
-            href="https://www.linkedin.com/in/chrismpettyjohn/"
+            href="mailto:chrismpettyjohn@gmail.com"
             style={{textDecoration: 'none'}}
+          >
+            <Button
+              color="default"
+              variant="contained"
+              style={{fontSize: '1.4rem'}}
+            >
+              <MailIcon />
+              My Email
+            </Button>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/chrismpettyjohn/"
+            style={{textDecoration: 'none', marginLeft: '2%'}}
             target="_blank"
           >
             <Button
@@ -24,19 +39,8 @@ export function ContactPage() {
               variant="contained"
               style={{fontSize: '1.4rem'}}
             >
+              <LinkedInIcon />
               LinkedIn
-            </Button>
-          </a>
-          <a
-            href="mailto:chrismpettyjohn@gmail.com"
-            style={{textDecoration: 'none', marginLeft: '2%'}}
-          >
-            <Button
-              color="secondary"
-              variant="contained"
-              style={{fontSize: '1.4rem'}}
-            >
-              My Email
             </Button>
           </a>
         </div>

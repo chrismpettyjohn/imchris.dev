@@ -85,7 +85,7 @@ const projects: ProjectCardProps[] = [
     title: 'Instinct',
     children:
       'Instinct is a collection of reusable front and back end modules that enable developers to build websites quicker and with well tested, scalable code.',
-    imageURL: 'https://i.imgur.com/f002AVg.png',
+    imageURL: 'https://i.imgur.com/lMpZsoL.png',
     technologies: [
       'Typescript',
       'NodeJS',
@@ -103,7 +103,7 @@ const projects: ProjectCardProps[] = [
     title: 'Heroic',
     children:
       'Heroic is a CMS for a niche community that allows people to build websites with ease and peace of mind knowing their site is safe from any potential threats.',
-    imageURL: 'https://i.imgur.com/Y07Tk6P.png',
+    imageURL: 'https://i.imgur.com/K2eHDUi.png',
     technologies: [
       'Javascript',
       'NodeJS',

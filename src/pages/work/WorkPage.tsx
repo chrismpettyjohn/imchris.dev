@@ -5,6 +5,23 @@ import {ProjectCardProps} from './project-card/ProjectCard.types';
 
 const projects: ProjectCardProps[] = [
   {
+    title: 'Nike',
+    children:
+      'While working a contract at Nike, I developed automations that helped reduce human labor by thousands of hours per year',
+    imageURL: 'https://i.imgur.com/GNm9LMt.png',
+    technologies: [
+      'Typescript',
+      'NodeJS',
+      'Automation Anywhere',
+      'VBScript',
+      'Kubernetes',
+      'Jenkins',
+      'AWS',
+      'Postgres',
+      'REST',
+    ],
+  },
+  {
     title: 'Marketing Milk',
     children:
       'Marketing Milk is an analytics dashboard that integrates with hundreds of APIs to provide an in-depth look at how your business is performing.',
@@ -16,6 +33,7 @@ const projects: ProjectCardProps[] = [
       'React',
       'Postgres',
       'MaterialUI',
+      'AWS',
       'REST',
       'HTTP',
       'HTML',
@@ -67,7 +85,7 @@ const projects: ProjectCardProps[] = [
     title: 'Instinct',
     children:
       'Instinct is a collection of reusable front and back end modules that enable developers to build websites quicker and with well tested, scalable code.',
-    imageURL: '/img/projects/react.png',
+    imageURL: 'https://i.imgur.com/f002AVg.png',
     technologies: [
       'Typescript',
       'NodeJS',
@@ -85,7 +103,7 @@ const projects: ProjectCardProps[] = [
     title: 'Heroic',
     children:
       'Heroic is a CMS for a niche community that allows people to build websites with ease and peace of mind knowing their site is safe from any potential threats.',
-    imageURL: '/img/projects/react.png',
+    imageURL: 'https://i.imgur.com/Y07Tk6P.png',
     technologies: [
       'Javascript',
       'NodeJS',

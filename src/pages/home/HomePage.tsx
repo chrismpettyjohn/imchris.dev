@@ -5,6 +5,7 @@ import WorkIcon from '@material-ui/icons/Work';
 import TodayIcon from '@material-ui/icons/Today';
 import StoreIcon from '@material-ui/icons/Store';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import BusinessIcon from '@material-ui/icons/Business';
 import {Timeline} from '../../components/timeline/Timeline';
 import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar';
 import {createStyles, Grid, makeStyles, Typography} from '@material-ui/core';
@@ -44,8 +45,8 @@ export function HomePage() {
               Software solutions <b>that scale</b>
             </Typography>
             <Typography variant="h6">
-              With over <b>10 years</b> of experience, I strive to build the
-              most innovative products for my clients.
+              With over <b>12 years</b> of experience, I strive to build the
+              most innovative solutions that scale.
             </Typography>
           </div>
         </div>
@@ -104,11 +105,17 @@ export function HomePage() {
             },
             {
               year: 2021,
+              name: 'Fortune 100',
+              desc: 'By 21, I started working a Lead Engineer contract for Nike',
+              icon: <BusinessIcon />,
+            },
+            {
+              year: 2021,
               name: 'Present',
               desc: 'I help startups build scalable Node applications.',
               icon: <TodayIcon />,
             },
-          ]}
+          ].reverse()}
         />
       </Grid>
     </Grid>

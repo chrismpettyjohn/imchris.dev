@@ -10,7 +10,7 @@ const useStyles = makeStyles(() =>
     jumbotron: {
       height: 750,
       width: '100%',
-      backgroundImage: 'url(/img/whiteboard.jpg)',
+      backgroundImage: 'url(https://i.imgur.com/h6Fd7Cm.png)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       position: 'relative',
@@ -33,8 +33,7 @@ export function AboutPage() {
         <Typography variant="h2">About Me</Typography>
         <br />
         <Typography variant="h6" style={{width: '50%'}}>
-          Hey! I'm Chris Pettyjohn, a Software Engineer with over 10 years of
-          experience.
+          Hey! I'm Chris, a Software Engineer with over 12 years of experience.
         </Typography>
         <br />
         <Typography variant="h6" style={{width: '50%'}}>
@@ -56,49 +55,11 @@ export function AboutPage() {
           <div className={classes.jumbotronText}>
             <Typography variant="h2">Self Taught</Typography>
             <Typography variant="h6" style={{width: '50%', margin: '0 auto'}}>
-              Long ass copy here
+              I spent my life learning and practicing development as a true
+              passion of mine.
             </Typography>
           </div>
         </div>
-      </Grid>
-      <Grid item className="mt-4" xl={12}>
-        <Grid container spacing={0} style={{backgroundColor: '#003554'}}>
-          <Grid item xl={4}>
-            <img
-              src="https://images.pexels.com/photos/7230408/pexels-photo-7230408.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-              height={550}
-              width="100%"
-              style={{float: 'right'}}
-            />
-          </Grid>
-          <Grid item xl={8}>
-            <div style={{textAlign: 'center', marginTop: '15%'}}>
-              <Typography variant="h2">Passionate</Typography>
-              <br />
-              <Typography variant="h6" style={{width: '50%', margin: '0 auto'}}>
-                Long ass copy here
-              </Typography>
-            </div>
-          </Grid>
-        </Grid>
-      </Grid>
-      <Grid item className="mt-4" xl={12}>
-        <Grid container spacing={0} style={{backgroundColor: '#006494'}}>
-          <Grid item xl={4}>
-            <img
-              src="https://images.pexels.com/photos/372281/pexels-photo-372281.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-              height={550}
-              width="100%"
-            />
-          </Grid>
-          <Grid item xl={8}>
-            <div style={{textAlign: 'center', marginTop: '15%'}}>
-              <Typography variant="h2">Analytical</Typography>
-              <br />
-              <Typography variant="h6">Long ass copy here</Typography>
-            </div>
-          </Grid>
-        </Grid>
       </Grid>
       <Grid item className="mt-4" xl={12}>
         <Grid container spacing={0} style={{backgroundColor: '#006494'}}>
@@ -106,12 +67,15 @@ export function AboutPage() {
             <div style={{textAlign: 'center', marginTop: '15%'}}>
               <Typography variant="h2">Results Driven</Typography>
               <br />
-              <Typography variant="h6">Long ass copy here</Typography>
+              <Typography variant="h6">
+                By breaking down large problems into smaller ones, we can reduce
+                complexity and solve bigger issues at the same time.
+              </Typography>
             </div>
           </Grid>
           <Grid item xl={4}>
             <img
-              src="https://images.pexels.com/photos/372281/pexels-photo-372281.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+              src="https://i.imgur.com/yVpFNzX.png"
               height={550}
               width="100%"
               style={{float: 'right'}}
@@ -123,54 +87,43 @@ export function AboutPage() {
         <Grid container spacing={0} style={{backgroundColor: '#006494'}}>
           <Grid item xl={4}>
             <img
-              src="https://images.pexels.com/photos/372281/pexels-photo-372281.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-              height={550}
-              width="100%"
-            />
-          </Grid>
-          <Grid item xl={8}>
-            <div style={{textAlign: 'center', marginTop: '15%'}}>
-              <Typography variant="h2">Fast Delivery</Typography>
-              <br />
-              <Typography variant="h6">Long ass copy here</Typography>
-            </div>
-          </Grid>
-        </Grid>
-      </Grid>
-      <Grid item className="mt-4" xl={12}>
-        <Grid container spacing={0} style={{backgroundColor: '#006494'}}>
-          <Grid item xl={8}>
-            <div style={{textAlign: 'center', marginTop: '15%'}}>
-              <Typography variant="h2">Future Proof</Typography>
-              <br />
-              <Typography variant="h6">Long ass copy here</Typography>
-            </div>
-          </Grid>
-          <Grid item xl={4}>
-            <img
-              src="https://images.pexels.com/photos/372281/pexels-photo-372281.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+              src="https://i.imgur.com/3Pi4N0e.png"
               height={550}
               width="100%"
               style={{float: 'right'}}
             />
           </Grid>
+          <Grid item xl={8}>
+            <div style={{textAlign: 'center', marginTop: '15%'}}>
+              <Typography variant="h2">Modern Architecture</Typography>
+              <br />
+              <Typography variant="h6">
+                All my projects follow a modular and headless approach allowing
+                endless change to the core and extensibility for extra features
+                easily.
+              </Typography>
+            </div>
+          </Grid>
         </Grid>
       </Grid>
       <Grid item className="mt-4" xl={12}>
         <Grid container spacing={0} style={{backgroundColor: '#006494'}}>
+          <Grid item xl={8}>
+            <div style={{textAlign: 'center', marginTop: '15%'}}>
+              <Typography variant="h2">Experienced</Typography>
+              <br />
+              <Typography variant="h6">
+                With over 12 years of experience in development, I've learned a
+                lot of lessons and worked with a variety of projects.
+              </Typography>
+            </div>
+          </Grid>
           <Grid item xl={4}>
             <img
-              src="https://images.pexels.com/photos/372281/pexels-photo-372281.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+              src="https://i.imgur.com/UwIIxCy.png"
               height={550}
               width="100%"
             />
-          </Grid>
-          <Grid item xl={8}>
-            <div style={{textAlign: 'center', marginTop: '15%'}}>
-              <Typography variant="h2">Well Planned</Typography>
-              <br />
-              <Typography variant="h6">Long ass copy here</Typography>
-            </div>
           </Grid>
         </Grid>
       </Grid>

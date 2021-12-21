@@ -88,7 +88,7 @@ export function HomePage() {
             {
               year: 2016,
               name: 'Open Source Development',
-              desc: "While I always maintained open source code, at 16 my developments really took off with exciting CMS's that adapted a modern web app approac'",
+              desc: "While I always maintained open source code, at 16 my developments really took off with exciting CMS's that adapted a modern web app approach",
               icon: <GitHubIcon />,
             },
             {

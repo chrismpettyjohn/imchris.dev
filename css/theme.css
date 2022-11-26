@@ -38,6 +38,10 @@ h1 {
     color: #BEF0FF;
 }
 
+a button {
+    text-decoration: none;
+}
+
 
 button {
     background: #EED369;

@@ -25,18 +25,20 @@ h1 {
 }
 
 .mini-container {
-    display: block;
     background: #191926;
     border-radius: 4px;
-    padding: 4%;
     width: 100%;
     height: fit-content;
     overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4%;
 }
 
-.mini-container, h1 {
+.mini-container h4 {
     color: #BEF0FF;
-    text-align: center;
 }
 
 a {

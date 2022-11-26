@@ -1,0 +1,172 @@
+{
+  "selectedTemplate": 9,
+  "basics": {
+    "name": "Chris Pettyjohn",
+    "email": "chrismpettyjohn@gmail.com",
+    "website": "https://github.com/chrismpettyjohn"
+  },
+  "education": [
+    {
+      "institution": "",
+      "location": "",
+      "area": "",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "",
+      "gpa": ""
+    }
+  ],
+  "work": [
+    {
+      "location": "Cupertino, CA",
+      "position": "Software Engineer @ Apple SPG",
+      "website": "",
+      "endDate": "Present",
+      "highlights":["Apple Special Projects Group"],
+      "company": "Teksystems",
+      "startDate": "Aug 2022"
+    },
+    {
+      "location": "Portland, OR",
+      "position": "Senior Software Engineer @ Nike",
+      "website": "",
+      "endDate": "Present",
+      "highlights": [
+        "Developed automations using NodeJS, Typescript and SQL",
+        "Facilitated the transition from Javascript to Typescript",
+        "Developed libraries for usage between the automations to promote code reusability",
+        "Wrote unit tests on new and previously untested automations",
+        "Contributions saved over 36,000 hours annually",
+        "Developed automations that processed over 44 million records yearly "
+      ],
+      "company": "Teksystems",
+      "startDate": "Jul 2021"
+    },
+    {
+      "highlights": [
+        "Created an analytics dashboard using NodeJS, Typescript and React",
+        "Developed a REST API in Node and NestJS for communicating with the React frontend",
+        "Developed an REST API that integrated with many external APIs for data processing",
+        "Facilitated the move from PHP to NodeJS",
+        "Developed unit tests using Jest",
+        "Mentored junior team members",
+        "Architected AWS Cloud operations for automating unit tests, deployments and scalability",
+        " Researched, planned, presented and implemented multiple large scale projects to improve UX and scalability"
+      ],
+      "company": "Drive Social Media",
+      "position": "Software Engineer",
+      "location": "St. Louis, MO",
+      "startDate": "Dec 2018",
+      "endDate": "Jun 2021"
+    },
+    {
+      "highlights": [
+        "Developed a REST API that took in data from multiple adoption sites and integrated with the frontend",
+        "Developed an AngularJS website that integrated with the REST API for providing adoption listings, contact forms, staff information",
+        "Developed an admin panel that integrated with the REST API to manage users, posts, listings and more"
+      ],
+      "company": "ECHA Pets",
+      "position": "Web Developer",
+      "location": "Paris, IL",
+      "startDate": "Jan 2015 ",
+      "endDate": "Jul 2016"
+    },
+    {
+      "highlights": [
+        "Developed a React, Typescript front end to integrate with a REST API",
+        "Created a CMS using PHP, Laravel and Vue",
+        "Developed a messaging service using Laravel, Angular and MongoDB",
+        "Created a CMS using NodeJS, NestJS and Express",
+        "Developed a reusable modular CMS library that provides provides components for creating a dynamic front end and back end"
+      ],
+      "startDate": "Jan 2014 ",
+      "endDate": "Present",
+      "company": "Freelance",
+      "position": "Software Engineer"
+    },
+    {
+      "highlights": [
+        ""
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "level": "",
+      "keywords": [
+        "Javascript",
+        "Typescript",
+        "PHP",
+        "HTML",
+        "CSS"
+      ],
+      "name": "Programming Languages"
+    },
+    {
+      "keywords": [
+        "NodeJS",
+        "NestJS",
+        "React",
+        "Vue",
+        "AngularJS",
+        "Jest",
+        "Docker"
+      ],
+      "name": "Frameworks"
+    },
+    {
+      "keywords": [
+        "EC2",
+        "S3",
+        "EKS",
+        "Cloudfront",
+        "Cloudformation",
+        "ElasticBeanstalk",
+        "IAM",
+        "ElastiCache",
+        "Cloudwatch"
+      ],
+      "name": "AWS"
+    },
+    {
+      "keywords": [
+        "MySQL",
+        "MariaDB",
+        "Postgres",
+        "OracleDB"
+      ],
+      "name": "Databases"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Instinct",
+      "description": "Instinct is a collection of reusable backend and frontend libraries for developing APIs and React apps.  Most recently, it has been used for a gaming community's app.",
+      "keywords": [
+        "NodeJS",
+        "Typescript",
+        "NestJS",
+        "React",
+        "Yarn"
+      ],
+      "url": "https://github.com/chrismpettyjohn/Instinct-Revised"
+    }
+  ],
+  "awards": [
+    {
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "education",
+    "work",
+    "skills",
+    "projects",
+    "awards"
+  ]
+}

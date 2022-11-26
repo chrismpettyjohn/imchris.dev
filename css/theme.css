@@ -1,0 +1,56 @@
+body {
+    background: #222233;
+    min-width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    line-height: 1.4rem;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #AACCFF;
+}
+
+.mini-container {
+    display: block;
+    background: #191926;
+    border-radius: 4px;
+    padding: 4%;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.mini-container, h1 {
+    color: #BEF0FF;
+}
+
+
+button {
+    background: #EED369;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 4%;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+
+button:hover {
+    background: #e8c63e;
+}

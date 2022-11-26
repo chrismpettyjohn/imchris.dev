@@ -52,9 +52,16 @@ button {
     text-transform: uppercase;
     width: 100%;
     font-size: 1.5rem;
+    margin-bottom: 4%;
 }
 
 
 button:hover {
     background: #e8c63e;
+}
+
+@media only screen and (max-width: 1200px) {
+    button {
+        width: 100% !important;
+    }
 }

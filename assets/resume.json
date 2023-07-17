@@ -19,12 +19,20 @@
   "work": [
     {
       "location": "Cupertino, CA",
-      "position": "Software Engineer @ Apple SPG",
       "website": "",
-      "endDate": "Present",
-      "highlights":["Apple Special Projects Group"],
+      "endDate": "Aug 2023",
+      "highlights": [
+        "Developed distributed microservices exposing GraphQL and RESTful APIs",
+        "Led the development of multiple projects while identifying requirements from stakeholders",
+        "Leveraged SQL databases, kubernetes and kafka messaging",
+        "Facilitated the move from Javascript to Typescript",
+        "Implemented multiple applications that greatly improved customer experience",
+        "",
+        ""
+      ],
+      "startDate": "Aug 2022",
       "company": "Teksystems",
-      "startDate": "Aug 2022"
+      "position": "Senior Software Engineer @ Apple"
     },
     {
       "location": "Portland, OR",

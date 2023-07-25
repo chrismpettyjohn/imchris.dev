@@ -16,12 +16,12 @@
       "website": "",
       "endDate": "Aug 2023",
       "highlights": [
+        "Engineered event-driven architectures with Node.js for microservices communication",
         "Implemented automated testing frameworks, resulting in a 30% reduction in regression issues",
-        "Actively participated in code reviews, ensuring adherence to coding standards and best practices",
+        null,
+        null,
+        null,
         "Demonstrated expertise in building complex and responsive user interfaces using React and TypeScript",
-        null,
-        null,
-        null,
         "Collaborated with cross-functional teams to define architecture requirements and ensure seamless integration",
         "Led cross-functional teams in the design, development, and successful delivery of high-impact software solutions",
         "Integrated service discovery and load balancing using Kubernetes, enabling seamless horizontal scaling of microservices",
@@ -38,8 +38,8 @@
       "endDate": "Jul 2022",
       "highlights": [
         "Acted as a technical lead, providing guidance and mentorship to junior engineers",
+        "Implemented automations resulting in annual time savings exceeding 36K hours and successful processing of over 44M records",
         "Created interactive data visualizations and reports, enabling warehouse stakeholders to make data-driven decisions effectively",
-        null,
         "Proven expertise in designing, developing, and maintaining data pipelines, and data integrations to support warehouse analytics",
         "Kept up-to-date with emerging technologies and industry trends related to data management, analytics, and warehouse optimization"
       ],
@@ -53,9 +53,10 @@
         "Drove the end-to-end product development lifecycle, from concept ideation and design to implementation",
         "Designed and optimized scalable architectures, ensuring the product could handle increased user demand and growth.",
         "Demonstrated expertise in building software solutions using cutting-edge technologies, such as NodeJS, React, NestJS and AWS",
-        "Designed and implemented robust CI/CD pipelines using industry-leading tools like Jenkins and GitLab CI/CD, enabling automated builds, testing, and deployments.",
+        "Designed and implemented robust CI/CD pipelines using industry-leading tools like Jenkins and GitLab CI/CD",
         "Implemented blue/green and canary deployment strategies, minimizing downtime and enabling continuous delivery of new features",
-        "Prepared and maintained comprehensive technical documentation, facilitating seamless knowledge transfer and onboarding of new team members."
+        "Prepared and maintained comprehensive technical documentation, facilitating seamless knowledge transfer and onboarding of new team members.",
+        "Successfully refactored PHP monolith into a distributed Node.js architecture, improving scalability and performance while reducing maintenance overhead"
       ],
       "company": "Drive Social Media",
       "position": "Software Engineer",
@@ -79,7 +80,7 @@
     },
     {
       "highlights": [
-        "Successfully managed and executed multiple freelance projects, providing end-to-end web development solutions to clients across various industries.",
+        "Successfully managed and executed multiple projects, providing e2e development solutions to clients across various industries.",
         "Developed dynamic and responsive web applications with a focus on user experience and performance.",
         null,
         "Proactively pursued learning opportunities to stay up-to-date with the latest web development trends, technologies, and best practices.",

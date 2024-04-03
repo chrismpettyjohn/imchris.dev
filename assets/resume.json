@@ -1,5 +1,8 @@
 {
   "selectedTemplate": 2,
+  "headings": {
+    "skills": "Expertise"
+  },
   "basics": {
     "name": "Chris Pettyjohn",
     "email": "chrismpettyjohn@gmail.com",
@@ -12,6 +15,26 @@
     }
   ],
   "work": [
+    {
+      "website": "",
+      "endDate": "Aug 2023",
+      "highlights": [
+        "Led multiple high-impact projects from conception to implementation, ensuring timely delivery and alignment with business goals.",
+        "Mentored junior engineers, fostering their growth and development within the team.",
+        "Spearheaded the implementation of comprehensive unit testing strategies, enhancing code quality and reliability.",
+        "Designed and developed front-end applications tailored for large-scale retail use, focusing on user experience and performance optimization.",
+        "Architected and developed robust backend services to support large-scale retail operations, ensuring scalability and resilience.",
+        "Achieved a 20% improvement in application performance through optimization techniques and architectural enhancements.",
+        "Implemented TypeScript, Node.js, React, and Java technologies effectively to meet project requirements and industry standards.",
+        null,
+        null,
+        null
+      ],
+      "startDate": "Aug 2022",
+      "company": "Mars",
+      "position": "Tech Lead - Contract ",
+      "location": "Remote"
+    },
     {
       "website": "",
       "endDate": "Aug 2023",
@@ -99,66 +122,151 @@
       ]
     }
   ],
-  "skills": [
-    {
-      "level": "",
-      "keywords": [
-        "Typescript",
-        "Javascript",
-        "PHP",
-        "HTML",
-        "CSS",
-        "Java",
-        "Python"
-      ],
-      "name": "Languages"
-    },
-    {
-      "keywords": [
-        "NodeJS",
-        "NestJS",
-        "React",
-        "Vue",
-        "AngularJS",
-        "Jest",
-        null,
-        "Kafka",
-        "Redis",
-        "CI/CD",
-        "Jenkins",
-        "Artifactory",
-        "Docker",
-        "Kubernetes"
-      ],
-      "name": "Tools"
-    },
-    {
-      "keywords": [
-        "EC2",
-        "S3",
-        "EKS",
-        "Cloudfront",
-        "Cloudformation",
-        "ElasticBeanstalk",
-        "IAM",
-        "ElastiCache",
-        "Cloudwatch",
-        "Helm",
-        "Lambda",
-        "EKS"
-      ],
-      "name": "Cloud"
-    },
-    {
-      "keywords": [
-        "MySQL",
-        "MariaDB",
-        "Postgres",
-        "OracleDB"
-      ],
-      "name": "Databases"
-    }
-  ],
+    "skills": [
+      {
+        "name": "Languages",
+        "keywords": [
+          "JavaScript",
+          "TypeScript",
+          "Python",
+          "Java",
+          "PHP",
+          "HTML",
+          "CSS"
+        ]
+      },
+      {
+        "name": "Frontend Frameworks",
+        "keywords": [
+          "React.js",
+          "Angular.js",
+          "Vue.js",
+          "jQuery"
+        ]
+      },
+      {
+        "name": "Backend Frameworks",
+        "keywords": [
+          "Node.js",
+          "Express.js",
+          "NestJS",
+          "Spring Boot"
+        ]
+      },
+      {
+        "name": "Testing Frameworks",
+        "keywords": [
+          "Jest",
+          "Mocha",
+          "Chai",
+          "JUnit"
+        ]
+      },
+      {
+        "name": "Event-Driven Architecture",
+        "keywords": [
+          "Kafka",
+          "RabbitMQ",
+          "AWS SNS/SQS"
+        ]
+      },
+      {
+        "name": "CI/CD",
+        "keywords": [
+          "Jenkins",
+          "GitLab CI/CD",
+          "GitHub Actions",
+          "Travis CI"
+        ]
+      }
+    ],
+    "tools": [
+      {
+        "name": "Containerization & Orchestration",
+        "keywords": [
+          "Docker",
+          "Kubernetes",
+          "Amazon EKS",
+          "Helm"
+        ]
+      },
+      {
+        "name": "Cloud Services",
+        "keywords": [
+          "AWS (EC2, S3, CloudFront, CloudFormation, IAM, ElastiCache, Lambda)",
+          "Google Cloud Platform (GCP)",
+          "Microsoft Azure"
+        ]
+      },
+      {
+        "name": "Version Control",
+        "keywords": [
+          "Git",
+          "SVN",
+          "Bitbucket"
+        ]
+      },
+      {
+        "name": "Database Management",
+        "keywords": [
+          "MySQL",
+          "MariaDB",
+          "PostgreSQL",
+          "OracleDB",
+          "MongoDB"
+        ]
+      }
+    ],
+    "cloud": [
+      {
+        "name": "AWS Services",
+        "keywords": [
+          "Amazon EC2",
+          "Amazon S3",
+          "Amazon EKS",
+          "Amazon CloudFront",
+          "Amazon CloudFormation",
+          "AWS IAM",
+          "Amazon ElastiCache",
+          "AWS Lambda",
+          "Amazon CloudWatch"
+        ]
+      },
+      {
+        "name": "Networking",
+        "keywords": [
+          "Route 53",
+          "API Gateway",
+          "Load Balancer"
+        ]
+      },
+      {
+        "name": "Serverless Computing",
+        "keywords": [
+          "AWS Lambda",
+          "AWS API Gateway"
+        ]
+      }
+    ],
+    "databases": [
+      {
+        "name": "SQL Databases",
+        "keywords": [
+          "MariaDB",
+          "MySQL",
+          "PostgreSQL",
+          "Oracle Database"
+        ]
+      },
+      {
+        "name": "NoSQL Databases",
+        "keywords": [
+          "MongoDB",
+          "DynamoDB"
+        ]
+      }
+    ]
+  },
   "projects": [
     {
       "keywords": [
@@ -174,9 +282,6 @@
       "summary": ""
     }
   ],
-  "headings": {
-    "skills": "Expertise"
-  },
   "sections": [
     "templates",
     "profile",

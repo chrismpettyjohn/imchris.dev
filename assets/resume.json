@@ -1,125 +1,103 @@
 {
-  "selectedTemplate": 2,
+  "selectedTemplate": 9,
   "headings": {
-    "skills": "Expertise"
+    "skills": "",
+    "awards": ""
   },
   "basics": {
-    "name": "Chris Pettyjohn",
+    "name": "Christopher Pettyjohn",
     "email": "chrismpettyjohn@gmail.com",
+    "phone": "217-264-6222",
     "website": "https://imchris.dev"
   },
   "education": [
     {
-      "endDate": "",
-      "gpa": ""
+      "gpa": "  ",
+      "startDate": " "
     }
   ],
   "work": [
     {
+      "location": "Newark, NJ",
+      "position": "Lead Engineer",
       "website": "",
-      "endDate": "Present",
       "highlights": [
-        "Led multiple high-impact projects from conception to implementation, ensuring timely delivery and alignment with business goals.",
-        "Mentored junior engineers, fostering their growth and development within the team.",
-        "Spearheaded the implementation of comprehensive unit testing strategies, enhancing code quality and reliability.",
-        "Designed and developed front-end applications tailored for large-scale retail use, focusing on user experience and performance optimization.",
-        "Architected and developed robust backend services to support large-scale retail operations, ensuring scalability and resilience.",
-        "Achieved a 20% improvement in application performance through optimization techniques and architectural enhancements.",
-        "Implemented TypeScript, Node.js, React, and Java technologies effectively to meet project requirements and industry standards.",
-        null,
-        null,
-        null
+        "Designed and implemented a service that calculates order delivery dates in under 40ms, improving processing speed, enabling better order prioritization, and optimizing inventory management.",
+        "Coordinated with stakeholders and teams to manage timelines and requirements, ensuring timely delivery of key features and improving cross-team collaboration.",
+        "Developed an automated image processing service for print shops, reducing manual intervention by 85% and streamlining custom packaging production.",
+        "Utilized CommerceTools, Amplience, and AWS to ensure 99.9% uptime and improve response times, supporting high-volume e- commerce platforms.",
+        "Built and optimized microservices using Node.js, Java, and Python, reducing latency by 20% and improving the user experience."
       ],
-      "startDate": "Aug 2023",
       "company": "Mars",
-      "position": "Tech Lead - Contract ",
-      "location": "Remote"
+      "startDate": "July 2023",
+      "endDate": "Present"
     },
     {
-      "website": "",
-      "endDate": "Aug 2023",
       "highlights": [
-        "Engineered event-driven architectures with Node.js for microservices communication",
-        "Implemented automated testing frameworks, resulting in a 30% reduction in regression issues",
-        null,
-        null,
-        null,
-        "Demonstrated expertise in building complex and responsive user interfaces using React and TypeScript",
-        "Collaborated with cross-functional teams to define architecture requirements and ensure seamless integration",
-        "Led cross-functional teams in the design, development, and successful delivery of high-impact software solutions",
-        "Integrated service discovery and load balancing using Kubernetes, enabling seamless horizontal scaling of microservices",
-        "Designed and implemented highly scalable microservices architecture using Node.js, effectively handling millions of transactions"
+        "Built scalable, intuitive front-end apps handling thousands of data points and complex simulations.",
+        "Built and maintained a reusable UI component library used across hundreds of applications within the organization, improving development efficiency and consistency.",
+        "Improved application performance by optimizing rendering processes and reducing load times by 40%, ensuring a seamless user experience during peak usage.",
+        "Collaborated with cross-functional teams to integrate frontend features with backend services, boosting responsiveness and scalability."
       ],
-      "startDate": "Aug 2022",
       "company": "Apple",
-      "position": "Senior Software Engineer - Contract ",
-      "location": "Remote"
+      "position": "Senior Engineer",
+      "location": "Cupertino, CA",
+      "startDate": "July 2022",
+      "endDate": "July 2023"
     },
     {
-      "position": "Senior Software Engineer - Contract",
-      "website": "",
-      "endDate": "Jul 2022",
       "highlights": [
-        "Acted as a technical lead, providing guidance and mentorship to junior engineers",
-        "Implemented automations resulting in annual time savings exceeding 36K hours and successful processing of over 44M records",
-        "Created interactive data visualizations and reports, enabling warehouse stakeholders to make data-driven decisions effectively",
-        "Proven expertise in designing, developing, and maintaining data pipelines, and data integrations to support warehouse analytics",
-        "Kept up-to-date with emerging technologies and industry trends related to data management, analytics, and warehouse optimization"
+        "Developed a warehouse management service to automatically manage inventory and reorder production materials, reducing stock shortages by 25% and improving supply chain efficiency.",
+        "Built scalable microservices and RESTful APIs using Node.js and Java, increasing system capacity to handle 20% more warehouse transactions.",
+        "Optimized NoSQL databases DynamoDB for real-time data processing, improving operational throughput by 35% in high-volume environments.",
+        "• Implemented CI pipelines, reducing deployment times by 30% and improving feature release cycles.",
+        "Enhanced database performance by 30% through advanced MySQL query tuning and index management, speeding up data retrieval and boosting system responsiveness."
       ],
       "company": "Nike",
-      "startDate": "Jul 2021",
-      "location": "Remote"
+      "location": "Beaverton, OR",
+      "position": "Senior Engineer",
+      "startDate": "July 2021",
+      "endDate": "July 2022"
     },
     {
       "highlights": [
-        "Provided technical leadership and vision, guiding the development team in building and architecting cutting-edge solutions",
-        "Drove the end-to-end product development lifecycle, from concept ideation and design to implementation",
-        "Designed and optimized scalable architectures, ensuring the product could handle increased user demand and growth",
-        "Demonstrated expertise in building software solutions using cutting-edge technologies, such as NodeJS, React, NestJS and AWS",
-        "Designed and implemented robust CI/CD pipelines using industry-leading tools like Jenkins and GitLab CI/CD",
-        "Implemented blue/green and canary deployment strategies, minimizing downtime and enabling continuous delivery of new features",
-        "Prepared and maintained comprehensive technical documentation, facilitating seamless knowledge transfer and onboarding of new team members",
-        "Successfully refactored PHP monolith into a distributed Node.js architecture, improving scalability and performance while reducing maintenance overhea"
+        "Collaborated with the CEO and CTO to define long-term business requirements and translate into actionable technical goals, directly shaping the platform’s strategic direction.",
+        "Led a team of five engineers, building the core platform, including multiple microservices, client dashboards, business dashboards, and an ad builder, using Laravel, PHP , Node.js, Vue, and React.",
+        "Developed scalable cloud-based solutions, improving platform performance by 800% and increasing user retention by 240%",
+        "Built and optimized CI/CD pipelines with Jenkins and GitLab CI/CD, reducing deployment times and accelerating feature releases.",
+        "Delivered key features that contributed to acquiring 1,000 new clients, generating an estimated $25 million in annual revenue, significantly boosting company growth."
       ],
       "company": "Drive Social Media",
       "position": "Software Engineer",
       "location": "St. Louis, MO",
-      "startDate": "Dec 2018",
-      "endDate": "Jun 2021"
+      "startDate": "Dec 2019",
+      "endDate": "July 2021"
     },
     {
       "highlights": [
-        "Deployed web applications to cloud platform, ensuring scalability and high availability",
-        "Managed project timelines and priorities, ensuring on-time delivery of features and meeting project milestones",
-        "Developed robust RESTful APIs to facilitate smooth communication between front-end and back-end components",
-        "Created responsive and mobile-friendly web applications, ensuring optimal user experiences across different devices and screen sizes",
-        null,
-        "Demonstrated expertise in both front-end technologies (HTML, CSS, JavaScript, Angular) and back-end technologies (Node.js, Express, Postgres"
+        "Founded and led the business, collaborating directly with clients to gather requirements, design custom web applications, and deliver tailored solutions using Angular, React, Node.js, and Laravel.",
+        "Provided long-term maintenance and support for client websites, ensuring 99.9% uptime and offering ongoing enhancements to meet evolving business needs.",
+        "Managed system administration on Linux servers, optimizing infrastructure performance and ensuring high availability for critical applications.",
+        "Delivered e-commerce platforms that boosted client sales by 40%, and mobile-friendly applications that increased mobile user adoption by 60%."
       ],
-      "company": "Edgar County Humane Association",
-      "position": "Full Stack Developer",
-      "location": "Paris, IL",
-      "startDate": "Jan 2015 ",
-      "endDate": "Jul 2016"
+      "company": "Impending Success LLC",
+      "position": "Founding Engineer",
+      "location": "Chicago, IL",
+      "startDate": "July 2015",
+      "endDate": "Nov  2019"
     },
     {
       "highlights": [
-        "Developed dynamic and responsive web applications with a focus on user experience and performance",
-        "Proactively pursued learning opportunities to stay up-to-date with web development trends, technologies, and best practices",
-        "Successfully managed and executed multiple projects, providing e2e development solutions to clients across various industries",
-        null,
-        "Received positive feedback and testimonials from clients, reflecting high levels of satisfaction with the quality and delivery of services"
+        "Collaborated closely with the owner and board members to discuss the long-term vision for the organization’s digital platform, ensuring alignment with goals and expanding community outreach.",
+        "Engineered a custom adoption portal using Angular and Node.js, driving a 72% increase in user engagement and a 55% rise in successful adoptions within the first year.",
+        "Designed a mobile-optimized, user-friendly interface that boosted registrations by 65% and volunteer sign-ups by 58%, significantly growing the platform’s user base.",
+        "Developed secure APIs and integrated a payment gateway, reducing form submission errors by 45% and improving payment processing efficiency by 68%."
       ],
-      "startDate": "Jan 2012",
+      "company": "Edgar County Humane Association ",
       "position": "Full Stack Developer",
-      "company": "Self Employed",
-      "location": "Remote",
-      "endDate": "Jan 2015"
-    },
-    {
-      "highlights": [
-        ""
-      ]
+      "location": "Illinois",
+      "startDate": "Jan 2014",
+      "endDate": "Jan 2016"
     }
   ],
   "skills": [
@@ -128,65 +106,92 @@
       "keywords": [
         "Typescript",
         "Javascript",
-        "PHP",
-        "HTML",
-        "CSS",
         "Java",
-        "Python"
+        "PHP",
+        "C"
       ],
-      "name": "Languages"
+      "name": "Programming Languages"
     },
     {
       "keywords": [
-        "NodeJS",
-        "NestJS",
         "React",
         "Vue",
-        "AngularJS",
-        "Jest",
-        null,
-        "Kafka",
+        "NextJS",
+        "React Native"
+      ],
+      "name": "Frontend"
+    },
+    {
+      "keywords": [
+        "NestJS",
+        "Laravel",
+        "SQL",
         "Redis",
-        "CI/CD",
-        "Jenkins",
-        "Artifactory",
-        "Docker",
-        "Kubernetes"
+        "Kafka",
+        "REST API",
+        "GraphQL",
+        "gRPC",
+        null
+      ],
+      "name": "Backend"
+    },
+    {
+      "keywords": [
+        "Lambda",
+        "DynamoDB",
+        "EC2",
+        "ECS",
+        "Kubernetes",
+        "CodePipeline",
+        "S3",
+        "Cloudfront",
+        "RDS",
+        "Elastic Beanstalk",
+        "SQS"
+      ],
+      "name": "AWS / Cloud"
+    },
+    {
+      "keywords": [
+        "Amplience",
+        "Commerce Tools",
+        "Layer0",
+        "Cloudfront",
+        "Netlify"
       ],
       "name": "Tools"
-    },
-    {
-      "keywords": [
-        "EC2",
-        "S3",
-        "EKS",
-        "Cloudfront",
-        "Cloudformation",
-        "ElasticBeanstalk",
-        "IAM",
-        "ElastiCache",
-        "Cloudwatch",
-        "Helm",
-        "Lambda",
-        "EKS"
-      ],
-      "name": "Cloud"
-    },
-    {
-      "keywords": [
-        "MySQL",
-        "MariaDB",
-        "Postgres",
-        "OracleDB"
-      ],
-      "name": "Databases"
     }
   ],
   "projects": [
     {
+      "name": "Archangel RPG",
       "keywords": [
+        "Java",
+        "Hibernate",
+        "Typescript",
+        "Websockets",
+        null,
+        "React",
+        "NodeJS",
+        "PixiJS",
         null
-      ]
+      ],
+      "description": "Developed Archangel RPG, a distributed MMO with a custom-built client and server, featuring immersive role-play, quests, boss battles, factions, and a rich, interactive world.",
+      "url": "https://github.com/chrismpettyjohn"
+    },
+    {
+      "keywords": [
+        "Typescript",
+        "NodeJS",
+        "Websockets",
+        "NextJS",
+        "Postgres",
+        "Kafka",
+        "Redis"
+      ],
+      "name": "Simpd",
+      "description": "Developed Simpd, a subscription-based content platform with a scalable distributed architecture and optimized server-side rendered frontend for high performance and user experience.",
+      "url": "https://github.com/chrismpettyjohn/Simpd-MVP"
     }
   ],
   "awards": [
@@ -200,10 +205,10 @@
   "sections": [
     "templates",
     "profile",
-    "education",
     "work",
-    "skills",
     "projects",
+    "skills",
+    "education",
     "awards"
   ]
 }

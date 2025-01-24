@@ -18,6 +18,21 @@
   ],
   "work": [
     {
+      "position": "Lead Engineer",
+      "website": "",
+      "highlights": [
+        "Developed and maintained of scalable RESTful APIs using Node.js and TypeScript, ensuring high performance and reliability.",
+        "Improved and maintained front-end user interfaces with React, focusing on usability and responsiveness.",
+        "Utilized DynamoDB for efficient and scalable database solutions in API development.",
+        "Contributed to streamlining CI/CD pipelines to enhance development and deployment efficiency.",
+        "Implemented NATS streaming for reliable, real-time messaging and event-driven architecture."
+      ],
+      "company": "Nike",
+      "startDate": "Jan 2025",
+      "endDate": "Present",
+      "location": "Beaverton, OR"
+    },
+    {
       "location": "Newark, NJ",
       "position": "Lead Engineer",
       "website": "",
@@ -26,7 +41,8 @@
         "Coordinated with stakeholders and teams to manage timelines and requirements, ensuring timely delivery of key features and improving cross-team collaboration.",
         "Developed an automated image processing service for print shops, reducing manual intervention by 85% and streamlining custom packaging production.",
         "Utilized CommerceTools, Amplience, and AWS to ensure 99.9% uptime and improve response times, supporting high-volume e- commerce platforms.",
-        "Built and optimized microservices using Node.js, Java, and Python, reducing latency by 20% and improving the user experience."
+        "Built and optimized microservices using Node.js, Java, and Python, reducing latency by 20% and improving the user experience.",
+        "Designed and developed frontend apps using Next, React Context and Zustand for over a million visitors monthly"
       ],
       "company": "Mars",
       "startDate": "July 2023",
@@ -117,7 +133,10 @@
         "React",
         "Vue",
         "NextJS",
-        "React Native"
+        "React Native",
+        "React Context",
+        "Zustand",
+        "Redux"
       ],
       "name": "Frontend"
     },
@@ -205,10 +224,10 @@
   "sections": [
     "templates",
     "profile",
-    "work",
-    "projects",
-    "skills",
     "education",
+    "work",
+    "skills",
+    "projects",
     "awards"
   ]
 }

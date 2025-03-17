@@ -1,43 +1,287 @@
-<html>
-    <head>
-        <title>I'm Chris</title>
-        <link href="css/theme.css" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-           <div style="text-align: center;width: 95%;max-width:1200px;overflow:hidden;">
-               <h1>Chris Pettyjohn</h1>
-               <div class="mini-container">
-                   <h4>Software Engineer</h4>
-               </div>
-                <div style="width: 100%;">
-                    <a href="assets/Christopher-Pettyjohn.pdf" target="_blank">
-                        <button style="width: 48%;float:left;">
-                            Resume
-                        </button>
-                    </a>
-                    <a href="https://www.linkedin.com/in/chrismpettyjohn/" target="_blank">
-                        <button style="width: 48%;float:right;">
-                            LinkedIn
-                        </button>
-                    </a>
-                </div>
-               <div style="width:100%;">
-                   <a href="https://github.com/chrismpettyjohn" target="_blank">
-                       <button style="width: 48%;float:left;">
-                           Github
-                       </button>
-                   </a>
-                   <a href="mailto:chrismpettyjohn@gmail.com">
-                       <button style="width: 48%;float:right;">
-                           Email
-                       </button>
-                   </a>
-               </div>
-           </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christopher Pettyjohn | Software Engineer</title>
+    <link href="css/theme.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="logo">CP</div>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
-    </body>
+      </div>
+    </nav>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-content">
+          <div class="glitch-wrapper">
+            <h1 class="glitch" data-text="Christopher Pettyjohn">Christopher Pettyjohn</h1>
+          </div>
+          <h2>Senior Software Engineer & Technical Leader</h2>
+          <p class="tagline">Architecting scalable solutions with 15+ years of full-stack expertise</p>
+          <div class="cta-buttons">
+            <a href="assets/Christopher-Pettyjohn.pdf" target="_blank" class="btn primary">Resume</a>
+            <a href="#contact" class="btn secondary">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="section-content">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                Technology has been my lifelong passion—from assembling my first computer at 8 and learning NodeJS at the age of 10. This relentless curiosity
+                launched my career straight out of school, leading me to partner with global giants like Apple, Nike, and Mars, solving complex challenges on
+                the world’s biggest stages.
+              </p>
+              <p>
+                With over 15 years at the forefront of technology, I've grown from developing immersive MMO experiences and thriving digital communities into an
+                accomplished technical leader. I specialize in turning ambitious visions into scalable realities, blending deep technical expertise with
+                user-focused design to create digital experiences that truly connect and inspire.
+              </p>
+
+              <div class="tech-stack">
+                <h3>Technical Expertise</h3>
+                <div class="tech-icons">
+                  <span class="tech-icon" title="TypeScript">Typescript</span>
+                  <span class="tech-icon" title="Node.js">Node.js</span>
+                  <span class="tech-icon" title="Python">Java</span>
+                  <span class="tech-icon" title="React">React</span>
+                  <span class="tech-icon" title="Docker">Docker</span>
+                  <span class="tech-icon" title="AWS">AWS</span>
+                  <span class="tech-icon" title="JavaScript">JavaScript</span>
+                  <span class="tech-icon" title="GraphQL">GraphQL</span>
+                  <span class="tech-icon" title="MongoDB">MongoDB</span>
+                  <span class="tech-icon" title="PostgreSQL">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+            <div class="skills">
+              <h3>Core Competencies</h3>
+              <div class="skill-tags">
+                <span>System Architecture</span>
+                <span>Technical Leadership</span>
+                <span>Product Strategy</span>
+                <span>Team Building</span>
+                <span>Cloud Infrastructure</span>
+                <span>DevOps & CI/CD</span>
+                <span>Performance Optimization</span>
+                <span>Security Best Practices</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery">
+        <div class="section-content">
+          <h2 class="section-title">Project Gallery</h2>
+          <div class="gallery-grid">
+            <div class="gallery-item" data-category="fullstack">
+              <div class="gallery-content">
+                <h3>Enterprise E-Commerce Platform</h3>
+                <p>Architected and implemented a scalable e-commerce solution handling 100k+ daily users</p>
+                <div class="gallery-overlay">
+                  <a href="#" class="view-project">View Case Study</a>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="infrastructure">
+              <div class="gallery-content">
+                <h3>Cloud-Native Architecture</h3>
+                <p>Designed and deployed a microservices-based infrastructure reducing operational costs by 40%</p>
+                <div class="gallery-overlay">
+                  <a href="#" class="view-project">View Case Study</a>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="community">
+              <div class="gallery-content">
+                <h3>MMO Community Platform</h3>
+                <p>Built a real-time community hub serving 500k+ active users with sub-50ms latency</p>
+                <div class="gallery-overlay">
+                  <a href="#" class="view-project">View Case Study</a>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-item" data-category="fullstack">
+              <div class="gallery-content">
+                <h3>Analytics Dashboard</h3>
+                <p>Developed a data visualization platform processing 1M+ events daily</p>
+                <div class="gallery-overlay">
+                  <a href="#" class="view-project">View Case Study</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+            <button class="filter-btn" data-filter="community">Community</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience">
+        <div class="section-content">
+          <h2 class="section-title">Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-icon">⚡</div>
+                <h3>15+ Years</h3>
+                <p>Full-Stack Development & Architecture</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-icon">🌐</div>
+                <h3>Cloud Native</h3>
+                <p>AWS, Docker, Kubernetes Expertise</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-icon">👥</div>
+                <h3>Technical Leadership</h3>
+                <p>Team Building & Mentoring</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-icon">🛠️</div>
+                <h3>System Design</h3>
+                <p>Scalable Architecture & Performance</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="section-content">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="project-grid">
+            <div class="project-card">
+              <div class="project-icon">🚀</div>
+              <h3>Enterprise Applications</h3>
+              <p>Building scalable, high-performance systems for Fortune 500 clients</p>
+            </div>
+            <div class="project-card">
+              <div class="project-icon">🏗️</div>
+              <h3>Cloud Architecture</h3>
+              <p>Designing and implementing cloud-native solutions with modern best practices</p>
+            </div>
+            <div class="project-card">
+              <div class="project-icon">🎮</div>
+              <h3>Real-time Systems</h3>
+              <p>Developing high-concurrency platforms with sub-millisecond latency</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="section-content">
+          <h2 class="section-title">Get in Touch</h2>
+          <div class="contact-grid">
+            <div class="contact-info">
+              <p>Ready to build the next generation of digital experiences?</p>
+              <div class="social-links">
+                <a href="https://github.com/chrismpettyjohn" target="_blank" class="social-link">
+                  <span class="social-icon">📂</span>
+                  GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/chrismpettyjohn/" target="_blank" class="social-link">
+                  <span class="social-icon">💼</span>
+                  LinkedIn
+                </a>
+                <a href="mailto:chrismpettyjohn@gmail.com" class="social-link">
+                  <span class="social-icon">✉️</span>
+                  Email
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Christopher Pettyjohn. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Custom cursor
+      const cursor = document.querySelector(".cursor");
+      const cursorFollower = document.querySelector(".cursor-follower");
+
+      document.addEventListener("mousemove", (e) => {
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+
+        cursorFollower.style.left = e.clientX + "px";
+        cursorFollower.style.top = e.clientY + "px";
+      });
+
+      // Gallery filtering
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const galleryItems = document.querySelectorAll(".gallery-item");
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const filter = button.getAttribute("data-filter");
+
+          filterButtons.forEach((btn) => btn.classList.remove("active"));
+          button.classList.add("active");
+
+          galleryItems.forEach((item) => {
+            if (filter === "all" || item.getAttribute("data-category") === filter) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+
+      // Scroll reveal
+      ScrollReveal().reveal(".section-content", {
+        delay: 200,
+        distance: "50px",
+        origin: "bottom",
+        interval: 100,
+      });
+
+      // GSAP animations
+      gsap.from(".hero-content", {
+        duration: 1,
+        y: 100,
+        opacity: 0,
+        ease: "power4.out",
+      });
+    </script>
+  </body>
 </html>

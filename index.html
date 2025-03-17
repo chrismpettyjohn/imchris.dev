@@ -3,234 +3,208 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Christopher Pettyjohn | Software Engineer</title>
-    <link href="css/theme.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <title>Christopher Pettyjohn | Senior Software Engineer & Technical Leader</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   </head>
   <body>
+    <!-- Cloud Background -->
+    <div class="clouds">
+      <div class="cloud"></div>
+      <div class="cloud"></div>
+      <div class="cloud"></div>
+      <div class="cloud"></div>
+    </div>
+
+    <!-- Custom Cursor -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
+    <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-content">
         <div class="logo">Christopher Pettyjohn</div>
         <div class="nav-links">
           <a href="#about">About</a>
-          <a href="#gallery">Gallery</a>
           <a href="#experience">Experience</a>
           <a href="#projects">Projects</a>
+          <a href="#gallery">Gallery</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
     </nav>
 
-    <main>
-      <section id="hero" class="hero">
-        <div class="hero-content">
-          <div class="glitch-wrapper">
-            <h1 class="glitch" data-text="Christopher Pettyjohn">Christopher Pettyjohn</h1>
-          </div>
-          <h2>Senior Software Engineer & Technical Leader</h2>
-          <p class="tagline">Architecting scalable solutions with 15+ years of full-stack expertise</p>
-          <div class="cta-buttons">
-            <a href="assets/Christopher-Pettyjohn.pdf" target="_blank" class="btn primary">Resume</a>
-            <a href="#contact" class="btn secondary">Get in Touch</a>
-          </div>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <img src="assets/img/headshot.jpeg" alt="Christopher Pettyjohn" class="profile-image" loading="eager" />
+        <div class="glitch-wrapper">
+          <h1 class="glitch">Christopher Pettyjohn</h1>
         </div>
-      </section>
-
-      <section id="about" class="about">
-        <div class="section-content">
-          <h2 class="section-title">About Me</h2>
-          <div class="about-grid">
-            <div class="about-text">
-              <p>
-                Technology has been my lifelong passion—from assembling my first computer at 8 and learning NodeJS at the age of 10. This relentless curiosity
-                launched my career straight out of school, leading me to partner with global giants like Apple, Nike, and Mars, solving complex challenges on
-                the world's biggest stages.
-              </p>
-              <p>
-                With over 15 years at the forefront of technology, I've grown from developing immersive MMO experiences and thriving digital communities into an
-                accomplished technical leader. I specialize in turning ambitious visions into scalable realities, blending deep technical expertise with
-                user-focused design to create digital experiences that truly connect and inspire.
-              </p>
-
-              <div class="tech-stack">
-                <h3>Technical Expertise</h3>
-                <div class="tech-icons">
-                  <span class="tech-icon" title="TypeScript">Typescript</span>
-                  <span class="tech-icon" title="Node.js">Node.js</span>
-                  <span class="tech-icon" title="Python">Java</span>
-                  <span class="tech-icon" title="React">React</span>
-                  <span class="tech-icon" title="Docker">Docker</span>
-                  <span class="tech-icon" title="AWS">AWS</span>
-                  <span class="tech-icon" title="JavaScript">JavaScript</span>
-                  <span class="tech-icon" title="GraphQL">GraphQL</span>
-                  <span class="tech-icon" title="MongoDB">MongoDB</span>
-                  <span class="tech-icon" title="PostgreSQL">PostgreSQL</span>
-                </div>
-              </div>
-            </div>
-            <div class="skills">
-              <h3>Core Competencies</h3>
-              <ul class="skill-list">
-                <li>System Architecture & Design</li>
-                <li>Technical Leadership & Mentoring</li>
-                <li>Product Strategy & Roadmapping</li>
-                <li>Team Building & Development</li>
-                <li>Cloud Infrastructure & DevOps</li>
-                <li>Performance Optimization</li>
-                <li>Security & Best Practices</li>
-                <li>Full-Stack Development</li>
-              </ul>
-            </div>
-          </div>
+        <h2>Senior Software Engineer</h2>
+        <p class="tagline">Architecting scalable solutions with 15+ years of full-stack expertise</p>
+        <div class="hero-buttons">
+          <a href="assets/resume.pdf" class="btn primary">View Resume</a>
+          <a href="#contact" class="btn secondary">Get in Touch</a>
         </div>
-      </section>
-
-      <section id="gallery" class="gallery">
-        <div class="section-content">
-          <h2 class="section-title">Project Gallery</h2>
-          <div class="gallery-grid">
-            <div class="gallery-item" data-category="fullstack">
-              <div class="gallery-content">
-                <h3>Enterprise E-Commerce Platform</h3>
-                <p>Architected and implemented a scalable e-commerce solution handling 100k+ daily users</p>
-                <div class="gallery-overlay">
-                  <a href="#" class="view-project">View Case Study</a>
-                </div>
-              </div>
-            </div>
-            <div class="gallery-item" data-category="infrastructure">
-              <div class="gallery-content">
-                <h3>Cloud-Native Architecture</h3>
-                <p>Designed and deployed a microservices-based infrastructure reducing operational costs by 40%</p>
-                <div class="gallery-overlay">
-                  <a href="#" class="view-project">View Case Study</a>
-                </div>
-              </div>
-            </div>
-            <div class="gallery-item" data-category="community">
-              <div class="gallery-content">
-                <h3>MMO Community Platform</h3>
-                <p>Built a real-time community hub serving 500k+ active users with sub-50ms latency</p>
-                <div class="gallery-overlay">
-                  <a href="#" class="view-project">View Case Study</a>
-                </div>
-              </div>
-            </div>
-            <div class="gallery-item" data-category="fullstack">
-              <div class="gallery-content">
-                <h3>Analytics Dashboard</h3>
-                <p>Developed a data visualization platform processing 1M+ events daily</p>
-                <div class="gallery-overlay">
-                  <a href="#" class="view-project">View Case Study</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="gallery-filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="fullstack">Full Stack</button>
-            <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
-            <button class="filter-btn" data-filter="community">Community</button>
-          </div>
-        </div>
-      </section>
-
-      <section id="experience" class="experience">
-        <div class="section-content">
-          <h2 class="section-title">Experience</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <div class="timeline-icon">⚡</div>
-                <h3>15+ Years</h3>
-                <p>Full-Stack Development & Architecture</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <div class="timeline-icon">🌐</div>
-                <h3>Cloud Native</h3>
-                <p>AWS, Docker, Kubernetes Expertise</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <div class="timeline-icon">👥</div>
-                <h3>Technical Leadership</h3>
-                <p>Team Building & Mentoring</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-content">
-                <div class="timeline-icon">🛠️</div>
-                <h3>System Design</h3>
-                <p>Scalable Architecture & Performance</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="projects">
-        <div class="section-content">
-          <h2 class="section-title">Featured Projects</h2>
-          <div class="project-grid">
-            <div class="project-card">
-              <div class="project-icon">🚀</div>
-              <h3>Enterprise Applications</h3>
-              <p>Building scalable, high-performance systems for Fortune 500 clients</p>
-            </div>
-            <div class="project-card">
-              <div class="project-icon">🏗️</div>
-              <h3>Cloud Architecture</h3>
-              <p>Designing and implementing cloud-native solutions with modern best practices</p>
-            </div>
-            <div class="project-card">
-              <div class="project-icon">🎮</div>
-              <h3>Real-time Systems</h3>
-              <p>Developing high-concurrency platforms with sub-millisecond latency</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact">
-        <div class="section-content">
-          <h2 class="section-title">Get in Touch</h2>
-          <div class="contact-grid">
-            <div class="contact-info">
-              <p>Ready to build the next generation of digital experiences?</p>
-              <div class="social-links">
-                <a href="https://github.com/chrismpettyjohn" target="_blank" class="social-link">
-                  <span class="social-icon">📂</span>
-                  GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/chrismpettyjohn/" target="_blank" class="social-link">
-                  <span class="social-icon">💼</span>
-                  LinkedIn
-                </a>
-                <a href="mailto:chrismpettyjohn@gmail.com" class="social-link">
-                  <span class="social-icon">✉️</span>
-                  Email
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer-content">
-        <p>&copy; 2024 Christopher Pettyjohn. All rights reserved.</p>
       </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about glass-panel">
+      <div class="section-content">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              From building my first computer at age 12 to architecting enterprise-scale applications, my journey in technology has been driven by an insatiable
+              curiosity and a passion for creating impactful solutions. As a self-taught engineer with a unique perspective shaped by building MMO communities,
+              I bring a fresh approach to technical challenges.
+            </p>
+            <p>
+              My experience spans from early days of tinkering with servers to leading development teams in creating scalable, maintainable applications. I
+              specialize in full-stack development with a focus on cloud architecture and modern web technologies.
+            </p>
+          </div>
+          <div class="tech-stack">
+            <h3>Technical Expertise</h3>
+            <div class="tech-icons">
+              <span class="tech-icon">JavaScript</span>
+              <span class="tech-icon">TypeScript</span>
+              <span class="tech-icon">React</span>
+              <span class="tech-icon">Node.js</span>
+              <span class="tech-icon">Python</span>
+              <span class="tech-icon">AWS</span>
+              <span class="tech-icon">Docker</span>
+              <span class="tech-icon">Kubernetes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="section-content">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item glass-panel">
+            <div class="timeline-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>Senior Software Engineer</h3>
+              <p>Leading development of enterprise-scale applications with modern tech stack</p>
+            </div>
+          </div>
+          <div class="timeline-item glass-panel">
+            <div class="timeline-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>Infrastructure Architect</h3>
+              <p>Designing and implementing scalable cloud infrastructure solutions</p>
+            </div>
+          </div>
+          <div class="timeline-item glass-panel">
+            <div class="timeline-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>Technical Lead</h3>
+              <p>Mentoring teams and driving technical excellence in development practices</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+      <div class="section-content">
+        <h2 class="section-title">Brand Experience</h2>
+        <p class="section-subtitle">Senior Software Engineer at Industry-Leading Companies</p>
+        <div class="gallery-grid">
+          <div class="gallery-item glass-panel">
+            <div class="brand-logo">
+              <svg height="44" viewBox="0 0 14 44" width="100" height=100" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"
+                ></path>
+              </svg>
+            </div>
+            <div class="gallery-content">
+              <h3>Apple</h3>
+              <p>Led development of enterprise-scale applications and microservices architecture</p>
+              <span class="role">Senior Software Engineer</span>
+            </div>
+          </div>
+          <div class="gallery-item glass-panel">
+            <div class="brand-logo">
+              <svg aria-hidden="true" class="swoosh-svg" focusable="false" viewBox="0 0 24 24" width="100" height=100" role="img" fill="none">
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <div class="gallery-content">
+              <h3>Nike</h3>
+              <p>Architected and implemented cloud-native solutions for global e-commerce platforms</p>
+              <span class="role">Senior Software Engineer</span>
+            </div>
+          </div>
+          <div class="gallery-item glass-panel">
+            <div class="brand-logo">
+              <svg focusable="false" role="img" viewBox="0 0 121 39" width="100" height=100" xmlns="http://www.w3.org/2000/svg" class="css-kjuewk">
+                <title>M&amp;M'S Official Site - Personalized Chocolate Gifts</title>
+                <path
+                  d="M115.498 4.61c.316-.026.568-.187.565-.637-.003-.555-.362-.732-.97-.73l-.879.005.009 2.434.504-.003-.005-1.023.239-.002.548 1.018h.596l-.607-1.063Zm-.33-.37-.445.003-.005-.586.352-.001c.192-.001.453.017.456.267.001.269-.134.317-.358.317Zm2.115.213c-.007-1.428-1.047-2.255-2.206-2.25-1.164.006-2.195.842-2.19 2.27.006 1.428 1.047 2.254 2.208 2.25 1.16-.006 2.193-.842 2.188-2.27Zm-2.188 1.749-.001-.005c-.869.01-1.571-.688-1.575-1.727-.005-1.04.692-1.736 1.561-1.74.846-.006 1.566.684 1.57 1.725.004 1.042-.71 1.745-1.555 1.747Zm-5.706 1.182-2.546-.008 2.098-5.043 3.295.005-2.847 5.046Zm-2.516 31.243-11.749-.001.002-26.94c0-2.033-1.593-2.899-3.563-2.899-1.972 0-3.56.82-3.56 2.899l.001 18.65c0 1.653.75 2.687 2.201 2.688l-.001 5.603-11.692-.002.002-26.94c0-2.027-1.594-2.898-3.564-2.898-2.04 0-3.561.911-3.562 2.898v18.65c0 1.653.752 2.687 2.201 2.687v5.604l-14.302-.001v-5.589h9.042l-.003-15.359-7.846.002s1.5-1.44 1.5-4.078c0-2.415-.957-4.53-2.692-5.977V1.542h11.516v1.85C73.48 1.725 76.177.997 79.365.999c3.082-.001 5.6.922 6.893 2.573C88.818 1.922 91.69.998 94.778 1c6.743 0 9.9 3.467 9.9 8.052l-.006 21.074c-.023 1.638.528 2.881 2.199 2.901l.002 5.6Zm-59.002-5.262v5.262H36.123v-26.94c0-2.033-1.593-2.898-3.564-2.898-1.97 0-3.559.82-3.559 2.898l.003 18.65c0 1.652.75 2.688 2.2 2.688v5.602H19.511v-26.94c0-2.028-1.593-2.898-3.564-2.898-2.04 0-3.56.911-3.56 2.898v18.65c0 1.652.75 2.688 2.2 2.688v5.602H.287v-5.602c1.717 0 2.605-1.035 2.604-2.688l.017-20.214c0-1.467-.904-2.548-2.622-2.548v-6.03H11.8v1.85C14.479 1.726 17.175 1 20.363 1c3.082 0 5.6.922 6.893 2.574 2.56-1.65 5.431-2.575 8.52-2.575 6.061 0 9.223 2.803 9.8 6.7v.003c.007.039.046.458.111 1.162-1.127 1.435-1.733 3.247-1.732 5.254 0 2.993 1.376 4.383 1.395 4.405a3.37 3.37 0 0 0-.222.14c-.056.043-2.924 2.212-2.923 6.259 0 2.604 1.034 4.983 2.911 6.7a9.478 9.478 0 0 0 2.756 1.743Zm11.863-19.764c.001 3.588-3.846 5.427-3.846 5.427l4.029 4.044c1.05-1.084 1.271-3.076 1.271-3.076l4.894-.001v3.556h-1.718s-.46 1.28-1.554 2.41c.047.048 1.273 1.191 1.273 1.191h2v3.567l-5.51.001-1.24-1.227s-2.401 2.39-7.164 2.392c-4.547 0-7.719-3.003-7.72-6.964 0-4.097 4.017-6.001 4.017-6.001-.923-.952-2.267-2.233-2.267-4.802 0-4.253 3.423-6.221 6.836-6.222 3.77 0 6.699 2 6.7 5.705ZM49.456 24.677c0 1.72 1.472 3.09 3.534 3.09 2.063 0 3.31-1.143 3.31-1.143l-5.076-4.962s-1.768.96-1.767 3.015Zm5.92-11.162c-.001-1.503-1.325-2.122-2.282-2.121-1.265 0-2.212.707-2.212 2.164 0 1.212 2.213 2.827 2.213 2.827s2.28-1.045 2.28-2.87Zm65.507 7.059c.004 3.032-2.288 5.606-6.406 5.612-1.718.003-3.171-.583-4.284-1.3l-.001.898-2.763.005-.005-6.044 2.597-.004c.313 1.897 2.057 2.972 4.151 3.024 1.482.037 2.243-1.11 2.242-1.804-.002-.879-.512-1.458-1.295-1.772-.984-.394-2.439-.695-3.738-1.204-2.531-.99-3.797-2.373-3.801-4.91-.004-3.082 2.495-5.225 5.897-5.214 1.395.005 2.815.394 3.739 1.042l-.005-.852 2.921-.004.008 5.185-2.748.005c-.389-1.257-1.889-2.292-3.637-2.289-1.106.002-1.688.61-1.686 1.523.002 1.264 1.277 1.627 4.433 2.53 3.199.915 4.377 3.272 4.381 5.573Z"
+                ></path>
+              </svg>
+            </div>
+            <div class="gallery-content">
+              <h3>M&Ms</h3>
+              <p>Developed scalable backend systems and microservices architecture</p>
+              <span class="role">Senior Software Engineer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact glass-panel">
+      <div class="section-content">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-grid">
+          <p>Let's discuss how I can help bring your technical vision to life</p>
+          <div class="social-links">
+            <a href="https://linkedin.com/in/chrispettyjohn" class="social-link">
+              <i class="fab fa-linkedin social-icon"></i>
+              LinkedIn
+            </a>
+            <a href="https://github.com/chrispettyjohn" class="social-link">
+              <i class="fab fa-github social-icon"></i>
+              GitHub
+            </a>
+            <a href="mailto:chris@imchris.dev" class="social-link">
+              <i class="fas fa-envelope social-icon"></i>
+              Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Christopher Pettyjohn. All rights reserved.</p>
     </footer>
 
     <script>
@@ -246,28 +220,7 @@
         cursorFollower.style.top = e.clientY + "px";
       });
 
-      // Gallery filtering
-      const filterButtons = document.querySelectorAll(".filter-btn");
-      const galleryItems = document.querySelectorAll(".gallery-item");
-
-      filterButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const filter = button.getAttribute("data-filter");
-
-          filterButtons.forEach((btn) => btn.classList.remove("active"));
-          button.classList.add("active");
-
-          galleryItems.forEach((item) => {
-            if (filter === "all" || item.getAttribute("data-category") === filter) {
-              item.style.display = "block";
-            } else {
-              item.style.display = "none";
-            }
-          });
-        });
-      });
-
-      // Scroll reveal
+      // ScrollReveal
       ScrollReveal().reveal(".section-content", {
         delay: 200,
         distance: "50px",
@@ -275,12 +228,24 @@
         interval: 100,
       });
 
-      // GSAP animations
-      gsap.from(".hero-content", {
-        duration: 1,
-        y: 100,
-        opacity: 0,
-        ease: "power4.out",
+      // Gallery filters
+      const filterBtns = document.querySelectorAll(".filter-btn");
+      const galleryItems = document.querySelectorAll(".gallery-item");
+
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          filterBtns.forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const filter = btn.textContent.toLowerCase();
+          galleryItems.forEach((item) => {
+            if (filter === "all" || item.dataset.category === filter) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
       });
     </script>
   </body>

@@ -1,0 +1,116 @@
+/* Root Variables */
+:root {
+    --primary-color: #2196f3;
+    --secondary-color: #1976d2;
+    --accent-color: #64b5f6;
+    --text-color: #333;
+    --light-text: #666;
+    --background: #f8f9fa;
+    --glass-bg: rgba(255, 255, 255, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-shadow: rgba(0, 0, 0, 0.1);
+    --gradient-1: linear-gradient(135deg, #2196f3, #1976d2);
+    --gradient-2: linear-gradient(135deg, #64b5f6, #2196f3);
+}
+
+/* Glass Panel Base */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px var(--glass-shadow);
+    border-radius: 15px;
+    transition: transform 0.2s ease;
+}
+
+/* Gallery Items */
+.gallery-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    transition: transform 0.2s ease;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery-content {
+    position: relative;
+    width: 100%;
+    padding: 1rem 0;
+    background: transparent;
+    color: var(--text-color);
+    opacity: 1;
+    transform: none;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    :root {
+        --glass-bg: rgba(255, 255, 255, 0.95);
+        --glass-border: rgba(255, 255, 255, 0.3);
+        --glass-shadow: rgba(0, 0, 0, 0.05);
+    }
+
+    .glass-panel, .gallery-item, .timeline-item, .project-card {
+        background: var(--glass-bg);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+
+    .gallery-content, .project-content, .timeline-content {
+        background: transparent;
+        color: var(--text-color);
+    }
+
+    .gallery-content h3, .project-content h3, .timeline-content h3 {
+        color: var(--primary-color);
+    }
+
+    .gallery-content p, .project-content p, .timeline-content p {
+        color: var(--text-color);
+    }
+
+    .role {
+        background: rgba(33, 150, 243, 0.15);
+        color: var(--secondary-color);
+    }
+
+    .tech-tag {
+        background: rgba(33, 150, 243, 0.15);
+        color: var(--secondary-color);
+    }
+}
+
+/* About Section */
+.about {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px var(--glass-shadow);
+    border-radius: 15px;
+    padding: 3rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+/* Contact Section */
+.contact {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px var(--glass-shadow);
+    border-radius: 15px;
+    padding: 3rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+} 

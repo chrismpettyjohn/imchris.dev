@@ -80,16 +80,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-                <a href="https://linkedin.com/in/chrismpettyjohn" target="_blank" className="p-4 rounded-full glass border-white/10 hover:border-mint-500/50 hover:bg-white/5 transition-all duration-300 group">
-                  <Linkedin className="w-7 h-7 text-white group-hover:text-mint-400" />
-                </a>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default HeroSection;

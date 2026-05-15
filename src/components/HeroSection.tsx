@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const HeroSection = () => {
   const downloadResume = () => {
-    downloadFile('/files/Christopher-Pettyjohn-Resume.pdf', 'Christopher-Pettyjohn-Resume.pdf');
+    downloadFile('/files/Christopher-Pettyjohn-Senior-Engineer.pdf', 'Christopher-Pettyjohn-Senior-Engineer.pdf');
   };
 
   return (
@@ -67,6 +67,19 @@ const HeroSection = () => {
                 <a href="https://github.com/chrismpettyjohn" target="_blank" className="p-4 rounded-full glass border-white/10 hover:border-mint-500/50 hover:bg-white/5 transition-all duration-300 group">
                   <Github className="w-7 h-7 text-white group-hover:text-mint-400" />
                 </a>
+                <a href="https://linkedin.com/in/chrismpettyjohn" target="_blank" className="p-4 rounded-full glass border-white/10 hover:border-mint-500/50 hover:bg-white/5 transition-all duration-300 group">
+                  <Linkedin className="w-7 h-7 text-white group-hover:text-mint-400" />
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
                 <a href="https://linkedin.com/in/chrismpettyjohn" target="_blank" className="p-4 rounded-full glass border-white/10 hover:border-mint-500/50 hover:bg-white/5 transition-all duration-300 group">
                   <Linkedin className="w-7 h-7 text-white group-hover:text-mint-400" />
                 </a>

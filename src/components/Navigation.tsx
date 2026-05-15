@@ -73,6 +73,14 @@ const Navigation = () => {
           
           <div className="w-px h-6 bg-white/10 mx-2"></div>
           
+          <button 
+            onClick={() => downloadFile('/files/Christopher-Pettyjohn-Senior-Engineer.pdf', 'Christopher-Pettyjohn-Senior-Engineer.pdf')}
+            className="text-sm font-bold text-slate-300 hover:text-mint-400 hover:glow-mint transition-all duration-300 uppercase tracking-widest flex items-center"
+          >
+            <Download className="w-4 h-4 mr-2" />
+            Resume
+          </button>
+
           <Button 
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="bg-mint-500 hover:bg-mint-400 text-slate-950 rounded-full font-bold px-6 shadow-lg shadow-mint-500/20 transition-all duration-300"

@@ -214,9 +214,10 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'ocean-sky': 'linear-gradient(135deg, #006994 0%, #0284C7 50%, #87CEEB 100%)',
-				'deep-ocean': 'linear-gradient(180deg, #0A192F 0%, #006994 100%)',
-				'sky-clouds': 'linear-gradient(180deg, #87CEEB 0%, #E0F2FE 100%)',
+				'ocean-sky': 'linear-gradient(135deg, #001a2c 0%, #002d4b 50%, #00426d 100%)',
+				'deep-ocean': 'linear-gradient(180deg, #020617 0%, #0f172a 100%)',
+				'sky-clouds': 'linear-gradient(180deg, #0f172a 0%, #1e293b 100%)',
+				'noise': "url('/img/noise.png')",
 			},
 			backdropBlur: {
 				xs: '2px',

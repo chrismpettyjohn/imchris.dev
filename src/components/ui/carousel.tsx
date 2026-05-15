@@ -109,11 +109,13 @@ const Carousel = React.forwardRef<
         return
       }
 
-      onSelect(api)
+      // Use a small delay to avoid synchronous state updates during render/effect phase in React 19
+      const timeoutId = setTimeout(() => onSelect(api), 0)
       api.on("reInit", onSelect)
       api.on("select", onSelect)
 
       return () => {
+        clearTimeout(timeoutId)
         api?.off("select", onSelect)
       }
     }, [api, onSelect])

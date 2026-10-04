@@ -1,0 +1,155 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../site';
+import { brands } from '../data/brands';
+import { experience } from '../data/experience';
+import { skills } from '../data/skills';
+import { formatDate, getPosts } from '../lib/posts';
+
+const posts = (await getPosts()).slice(0, 3);
+---
+
+<Base>
+  <header class="page-header">
+    <a class="portrait" href="/" aria-label="Home">
+      <img src="/img/its-me.jpeg" alt={SITE.name} width="96" height="96" />
+    </a>
+    <h1>{SITE.name}</h1>
+    <p class="role">Senior / Lead Software Engineer</p>
+    <ul class="inline-links">
+      <li><a class="button" href={SITE.resume} download>Resume</a></li>
+      <li><a class="button secondary" href={SITE.github} rel="me noopener">GitHub</a></li>
+      <li><a class="button secondary" href={SITE.linkedin} rel="me noopener">LinkedIn</a></li>
+    </ul>
+    <p class="lede">
+      Senior software engineer with 15+ years shipping commerce, logistics and AI products at Nike,
+      Apple and Mars. Currently at Walmart International.
+    </p>
+  </header>
+
+  {
+    posts.length > 0 && (
+      <section id="posts" class="section">
+        <div class="section-head">
+          <h2>Latest posts</h2>
+          <a href="/blog/">All posts →</a>
+        </div>
+        <ul class="post-list">
+          {posts.map((post) => (
+            <li>
+              <a href={`/blog/${post.id}/`}>
+                <time class="meta" datetime={post.data.date.toISOString()}>
+                  {formatDate(post.data.date)}
+                </time>
+                <h3>{post.data.title}</h3>
+                <p>{post.data.description}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )
+  }
+
+  <section class="brands" aria-label="Companies I've worked with">
+    <p class="meta">Trusted by teams at</p>
+    <div class="marquee">
+      <div class="marquee-track">
+        {
+          [false, true].map((copy) => (
+            <ul aria-hidden={copy ? 'true' : undefined}>
+              {brands.map((brand) => (
+                <li>
+                  {brand.src && (
+                    <img
+                      class:list={{ invert: brand.invertOnDark }}
+                      src={brand.src}
+                      alt={copy || brand.label ? '' : brand.name}
+                      width={brand.width}
+                      height={brand.height}
+                      style={`width: ${brand.width}px; height: ${brand.height}px`}
+                    />
+                  )}
+                  {brand.label && <span>{brand.label}</span>}
+                </li>
+              ))}
+            </ul>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <h2>Track record</h2>
+    <p class="section-lede">
+      15+ years of delivering high-stakes engineering for global leaders and fast-moving startups.
+    </p>
+    <ol class="timeline">
+      {
+        experience.map((job) => (
+          <li class="job">
+            <div class="logo" style={`background-color: ${job.logoBg}`} aria-hidden="true">
+              {job.logo ? (
+                <img class:list={{ cover: job.logoCover, fill: job.logoFill }} src={job.logo} alt="" loading="lazy" />
+              ) : (
+                <span>{job.initials}</span>
+              )}
+            </div>
+            <div class="job-head">
+              <h3>{job.title}</h3>
+              <p class="meta">
+                <span>{job.company}</span>
+                {job.period && (
+                  <Fragment>
+                    {' · '}
+                    <span>{job.period}</span>
+                  </Fragment>
+                )}
+              </p>
+            </div>
+            <div class="job-body">
+              {job.description && <p>{job.description}</p>}
+              {job.achievements.length > 0 && (
+                <ul>
+                  {job.achievements.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              )}
+              {job.tech.length > 0 && (
+                <ul class="chips">
+                  {job.tech.map((item) => (
+                    <li>{item}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Technical stack</h2>
+    <p class="section-lede">The tools I reach for most.</p>
+    <dl class="grid">
+      {
+        skills.map((group) => (
+          <div>
+            <dt>{group.title}</dt>
+            <dd>{group.description}</dd>
+            <dd>
+              <ul class="chips">
+                {group.skills.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </dd>
+          </div>
+        ))
+      }
+    </dl>
+  </section>
+</Base>

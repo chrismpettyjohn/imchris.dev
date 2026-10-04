@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    rect { fill: #1d1d1f; }
+    text { fill: #f5f5f7; }
+    @media (prefers-color-scheme: dark) {
+      rect { fill: #f5f5f7; }
+      text { fill: #1d1d1f; }
+    }
+  </style>
+  <rect width="64" height="64" rx="14" />
+  <text x="32" y="42" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif" font-size="28" font-weight="600" letter-spacing="-1">CP</text>
+</svg>

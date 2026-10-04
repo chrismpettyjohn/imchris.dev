@@ -6,16 +6,11 @@ import { experience } from '../data/experience';
 import { skills } from '../data/skills';
 import { formatDate, getPosts } from '../lib/posts';
 
-const posts = (await getPosts()).slice(0, 3);
+const posts = await getPosts();
 ---
 
 <Base>
   <header class="page-header">
-    <a class="portrait" href="/" aria-label="Home">
-      <img src="/img/its-me.jpeg" alt={SITE.name} width="96" height="96" />
-    </a>
-    <h1>{SITE.name}</h1>
-    <p class="role">Senior / Lead Software Engineer</p>
     <ul class="inline-links">
       <li><a class="button" href={SITE.resume} download>Resume</a></li>
       <li><a class="button secondary" href={SITE.github} rel="me noopener">GitHub</a></li>
@@ -31,22 +26,35 @@ const posts = (await getPosts()).slice(0, 3);
     posts.length > 0 && (
       <section id="posts" class="section">
         <div class="section-head">
-          <h2>Latest posts</h2>
-          <a href="/blog/">All posts →</a>
+          <h2>Posts</h2>
+          <input
+            class="post-search"
+            type="search"
+            placeholder="Search posts"
+            aria-label="Search posts"
+            autocomplete="off"
+            hidden
+          />
         </div>
-        <ul class="post-list">
-          {posts.map((post) => (
-            <li>
-              <a href={`/blog/${post.id}/`}>
-                <time class="meta" datetime={post.data.date.toISOString()}>
-                  {formatDate(post.data.date)}
-                </time>
-                <h3>{post.data.title}</h3>
-                <p>{post.data.description}</p>
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div class="post-scroll">
+          <ul class="post-list">
+            {posts.map((post) => (
+              <li data-search={`${post.data.title} ${post.data.description}`.toLowerCase()}>
+                <a href={`/blog/${post.id}/`}>
+                  <time class="meta" datetime={post.data.date.toISOString()}>
+                    {formatDate(post.data.date)}
+                  </time>
+                  <h3>{post.data.title}</h3>
+                  <p>{post.data.description}</p>
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p class="meta post-empty" hidden>
+            No posts match.
+          </p>
+          <div class="post-sentinel" aria-hidden="true" />
+        </div>
       </section>
     )
   }
@@ -153,3 +161,46 @@ const posts = (await getPosts()).slice(0, 3);
     </dl>
   </section>
 </Base>
+
+<script>
+  // Posts widget: reveal posts in batches as the list is scrolled, and filter them by search.
+  const BATCH = 6;
+  const scroller = document.querySelector<HTMLElement>('.post-scroll');
+  const input = document.querySelector<HTMLInputElement>('.post-search');
+
+  if (scroller && input) {
+    const items = [...scroller.querySelectorAll<HTMLElement>('.post-list > li')];
+    const empty = scroller.querySelector<HTMLElement>('.post-empty')!;
+    const sentinel = scroller.querySelector<HTMLElement>('.post-sentinel')!;
+    let shown = BATCH;
+
+    const render = () => {
+      const query = input.value.trim().toLowerCase();
+      let matches = 0;
+      for (const item of items) {
+        const match = !query || item.dataset.search!.includes(query);
+        // A search shows every match; otherwise only the batches loaded so far.
+        item.hidden = !match || (!query && matches >= shown);
+        if (match) matches++;
+      }
+      empty.hidden = matches > 0;
+    };
+
+    new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && shown < items.length) {
+          shown += BATCH;
+          render();
+        }
+      },
+      { root: scroller, rootMargin: '120px' },
+    ).observe(sentinel);
+
+    input.hidden = false;
+    input.addEventListener('input', () => {
+      scroller.scrollTop = 0;
+      render();
+    });
+    render();
+  }
+</script>

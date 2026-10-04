@@ -6,14 +6,16 @@ interface Props {
   title: string;
   description: string;
   date: Date;
+  linkedin?: string;
 }
 
-const { title, description, date } = Astro.props;
+const { title, description, date, linkedin } = Astro.props;
 ---
 
 <Base title={title} description={description} type="article">
   <article>
     <header class="post-header">
+      <a class="back-top" href="/">← Back</a>
       <time class="meta" datetime={date.toISOString()}>{formatDate(date)}</time>
       <h1>{title}</h1>
       <p class="lede">{description}</p>
@@ -22,5 +24,14 @@ const { title, description, date } = Astro.props;
       <slot />
     </div>
   </article>
-  <p class="back"><a href="/blog/">← All posts</a></p>
+  <div class="back">
+    <a href="/">← Back</a>
+    {
+      linkedin && (
+        <a class="button secondary" href={linkedin} rel="noopener">
+          Read on LinkedIn
+        </a>
+      )
+    }
+  </div>
 </Base>

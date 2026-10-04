@@ -1,6 +1,6 @@
 # imchris.dev
 
-Personal site and blog. Static [Astro](https://astro.build) site: Markdown posts, one stylesheet, no client-side JavaScript.
+Personal site and blog. Static [Astro](https://astro.build) site: Markdown posts, one stylesheet, and one small script for the posts search.
 
 ## Develop
 
@@ -30,7 +30,7 @@ Body goes here.
 
 ## Where things live
 
-- `src/pages/` — routes: blog home, post pages, About, 404, RSS
+- `src/pages/` — routes: home (resume and posts), post pages, 404, RSS
 - `src/layouts/` — page shell (nav, footer) and post layout
 - `src/data/` — experience and skills shown on the About page
 - `src/site.ts` — name, description, and profile links

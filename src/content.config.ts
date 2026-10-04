@@ -9,6 +9,8 @@ const blog = defineCollection({
     description: z.string(),
     date: z.coerce.date(),
     draft: z.boolean().default(false),
+    // Where the post was first published, linked at the bottom of the post.
+    linkedin: z.url().optional(),
   }),
 });
 
